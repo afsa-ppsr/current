@@ -1,0 +1,165 @@
+﻿/* This file controls CSS values (including colour) for navigation elements.  */
+
+/*Base changes*/
+
+/* ------------------------
+utilities
+------------------------ */
+
+.headerNav ul#utilities
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 990px;
+	text-align: right;
+	margin: 0;
+	line-height: 2em;
+	height: 1.4em;
+	padding: 0;
+	z-index: 200;
+	padding: 1px;
+}
+.headerNav ul#utilities a
+{
+	font-size: 8pt;
+	color: white; /*#006071;*/
+}
+.headerNav ul#utilities li
+{
+    display: inline;
+	list-style-type: none;
+	margin: 0 1em 0 0;
+	line-height: 2em;
+	height: 2em;
+
+}
+
+
+/* ------------------------
+menu
+------------------------ */
+.menuNav {
+    padding-top: 5px;
+
+}
+
+.bd {
+    height: 28px;
+   
+}
+
+ul.parentmenu, ul.parentmenu:after {
+    background-color: transparent !important;
+    position: absolute;
+    width:1150px;
+    white-space: nowrap !important;
+    overflow: visible;
+}
+
+
+/* ------------------------
+buttons and popups
+------------------------ */
+
+
+#overDiv
+{
+    background-image: url(../images/back.png);
+    z-index: 99999;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height: 100%;
+    min-height:100%;
+    display:none;
+}
+
+.rightAlignedButtons 
+{
+    text-align: right;
+    margin-top: 16px;
+}
+
+.wizardButtons
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.standardButton
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.lastWizardButton {
+    /*margin-left: 30px;*/
+    margin-right: 0px !important;
+}
+
+    #popupMask {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    background-color: #000;
+    -moz-opacity: 0.6;
+    opacity: .60;
+    filter: alpha(opacity=60);
+    min-height: 100%;
+}
+#popupContainer {
+	position: absolute;
+	z-index: 201;
+	top:0px;
+	left:0px;
+	display:none;
+	padding: 0px;
+}
+#popupInner {
+	border: 1px solid #000;
+	background-color: #cfe3e3;
+	padding:10px;
+}
+#popupFrame {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 202;	
+}
+#popupTitleBar {
+/*	background-color: #333344; */
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 1.3em;
+	padding: 5px;
+/*	border-bottom: 2px solid #000000;
+	border-top: 1px solid #78A3F2;
+	border-left: 1px solid #78A3F2;
+	border-right: 1px solid #204095; */
+	position: relative;
+	z-index: 203;
+}
+#popupTitle {
+	float:left;
+	font-size: 1.1em;
+}
+#popupControls {
+	float: right;
+	cursor: pointer;
+	cursor: hand;
+}
+#popupControls a span {
+	display: block;
+	height: 15px;
+	width: 15px;
+	text-indent: -9000px;
+	background: url('../images/close.gif') no-repeat;
+}

@@ -1,0 +1,138 @@
+﻿.PaymentAmountPanel
+{
+	margin-bottom: 20px;
+}
+.PaymentAmountTable th
+{
+	font-size: 14px;
+	font-weight: bold;
+}
+.PaymentAmountTable td
+{
+	padding-left: 20px;
+}
+.PaymentOptionHeader
+{
+	font-size: 14px;
+	font-weight: bold;
+}
+.PaymentOptionsPanel {
+    width: 520px;
+    padding: 10px 0px 15px 5px;
+    margin-bottom: 14px;
+}
+.PaymentRadioButtonsDiv
+{
+	margin-top: 10px;
+	margin-left: -6px;
+	padding-left: 6px;
+	background-color: #ffffff;
+	white-space: nowrap;
+}
+.PaymentDetailsTable th
+{
+	padding-top:4px;
+	padding-bottom:1px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+.PaymentDetailsTable td
+{
+	padding-top:1px;
+	padding-bottom:0px;
+	padding-left: 40px;
+	white-space: nowrap;
+}
+.PaymentDetailsPanel {
+    margin-top: 8px;
+    background-color: #F3F7F8; /* #e4fafd; #FFDDDD */
+    padding: 8px 8px 8px 15px;
+    border-radius: 10px;
+}
+.PaymentAlertHeader
+{
+	color: #ff0000;
+	font-size: 14px;
+    font-weight:bold;
+}
+.PaymentSecurityInfo
+{
+	position: relative;
+	margin-right: 200px;
+}
+
+.PaymentCardImg
+{
+	position: absolute;
+	left: 450px;
+	top: 0px;
+}
+.PaymentVerificationInfo
+{
+	position: relative;
+	margin-right: 200px;
+	margin-left: 170px;
+}
+.PaymentEnrolButtonDiv
+{
+	text-align:center;
+}
+.PaymentEnrolButtonDiv input
+{
+	width: 80px;
+}
+.PopupBackdrop
+{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:1000;
+	background-color:#000;
+	filter: alpha(opacity=60); 
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+}
+.EnrolCardPopup
+{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	text-align:center;
+	z-index:1001;
+}
+.PopupContentDiv
+{
+	width:780px;
+	height:760px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:70px;
+	z-index:1002;
+	padding-bottom:7px;
+	
+	border:1px solid #000000;
+	background-color:#ffffff;
+}
+.EnrolCardIFrame
+{
+	width:100%;
+	height:730px;
+	border:none;
+	z-index:1100;
+}
+.PopupCloseButtonDiv
+{
+	float:right;
+	padding-bottom:10px;
+}
+.PopupCloseButtonDiv input
+{
+	margin-right:10px; 
+	margin-top:5px;
+	width:70px;
+	height:25px;
+}

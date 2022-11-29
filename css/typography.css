@@ -1,0 +1,104 @@
+﻿/* This file controls all CSS values relating to typography, with the exception of  navigation and table elements. Those values are set in 'navigation.css' and 'tables.css' respectively.  */
+
+/*base changes*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 75%/1.9 Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	margin: 0;
+	line-height: 1.4;
+	font-weight: bold;
+	padding-bottom: .2em;
+}
+
+h1 {
+	font-size: 1.8em;
+}
+
+h2
+{ 
+	font-size: 1.6em;
+}
+
+h3 
+{ 
+    font-size: 1.4em; 
+}
+
+h4 
+{ 
+    font-size: 1.3em; 
+}
+
+h5 
+{ 
+    font-size: 1.2em; 
+}
+
+h6
+{
+	font-size: 1.1em;
+	font-style: italic;
+}
+
+p
+{
+	line-height: 1.6;
+	margin: 0 0 1em;
+}
+
+.formContentPanelIndent p {
+    line-height: 1.6;
+    margin: 0 0 1em 15px;
+}
+.formContentPanelIndent20 p {
+    line-height: 1.6;
+    margin: 0 0 1em 20px;
+}
+
+.formFocusPanel p {
+    line-height: 1.6;
+    margin: 0 0 1em 15px;
+}
+th 
+{
+    font-weight: bold;
+}
+
+td, th {
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+/* ------------------------
+classes
+------------------------ */
+
+.structurelabel
+{
+	position: absolute;
+	left: -500em;
+	width: 490em;
+}
+
+.required
+{
+	color: red;
+	font-weight: bold;
+}
+
+/*Previous Styles*/
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}

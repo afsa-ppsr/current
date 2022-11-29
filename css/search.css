@@ -1,0 +1,141 @@
+﻿
+.SearchLandingLeft 
+{
+    float:left;
+    width: 49%;
+}
+
+.SearchLandingRight 
+{
+    float: right;
+    width: 49%;
+}
+
+.Spacer
+{
+    height: 50px;
+    float: right;
+    width: 49%;
+} 
+
+.SearchSumValue
+{
+    width: 503px;
+    margin-top: 2px;
+    float: right;
+}
+.SearchSumLabel
+{
+    float: left;
+    display: inline;
+    margin: 0px 0 0 15px;
+}
+
+.summaryTable
+{
+    display: block;
+    /*border-width: 1px;
+    border-color: Black;
+    border-style: solid;*/
+    width: 350px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.summaryLabel
+{
+    font-weight: bold;
+    margin-right: 20px;
+}
+/* 
+The style below is for RegistrationDetailsSingle,RegistrationDetails, 
+
+*/
+
+.ResultDetailsValue
+{
+        width: 440px;
+        margin-top: 0px;
+        float: right;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        line-height: 14px;
+        vertical-align:bottom;   
+}
+
+.ResultDetailsValueWithWordBreak
+{
+        word-wrap:break-word; 
+        word-break:break-all;  
+}
+
+
+.ResultDetailsValueWithLongDetailsLabel
+{
+        /* this is the same as class .ResultDetailsValue, except that margin-top is one line-height */
+        width: 440px;
+        margin-top: 14px;
+        float: right;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        line-height: 14px;
+        vertical-align:bottom;   
+}
+
+.PanelForRegistrationDetails
+{
+    position: relative;
+    margin-bottom:4px;        
+    
+    
+}
+
+
+.ResultDetailsLabel
+{
+    
+        float: left;
+        display: inline;
+        width: 200px;
+        margin: 0px 0px 0px 20px;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        line-height: 14px;
+    
+}
+.ResultDetailsLabelForBlock
+{
+    
+        float: left;
+        display:inline-block;
+        width: 190px;
+        margin: 0px 10px 0px 20px;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        line-height: 14px;
+        height:30px;
+        vertical-align:bottom;
+      
+}
+
+   
+.ReceiptLink
+{
+
+    margin-left: 100px;
+}
+
+.ResultDetailsRegistrarAlertText
+{
+    
+        float: left;
+        display: inline;
+        width: 520px;
+        margin: 0px 0px 0px 20px;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        line-height: 14px;
+        color:red;
+}
+
+

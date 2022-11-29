@@ -1,0 +1,133 @@
+﻿/* This file controls all CSS colour values, with the exception of navigation elements. Those colour values are set in 'navigation.css'.  */
+
+/*Base Changes*/
+body
+{
+/*	background: white url(../images/bodybg.jpg) repeat-y top center;*/
+	color: #000;
+}
+
+hr {
+	border-style: solid;
+	border-collapse: separate;
+	border-color: #207986;
+}
+
+#wrap
+{
+	/*background: #fff;*/
+	/*border-left: 1px solid #247272;
+	border-right: 1px solid #247272;
+	border-bottom: 1px solid #247272;*/
+	border: none !important;  
+	background: white url(../images/bodybg.jpg) repeat-y scroll center top !important;
+}
+
+.menuNav, .headerNav, .footer 
+{
+    background: linear-gradient(to right,#005257 25%, #006272 70%,#6Fc1c2 100%); /*#e6fcff;*/ /*#caeaf0; */
+}
+
+a:link 
+{ 
+    color: #004652; 
+}
+
+a:visited, .sidebar a:visited, .headerNav a:visited 
+{ 
+    color: #000; 
+}
+
+a:focus, .sidebar a:focus, .headerNav a:focus 
+{ 
+    color: red; 
+}
+
+a:hover, .sidebar a:hover, .headerNav a:hover 
+{ 
+    color: #006071; 
+}
+
+a:active, .sidebar a:active, .headerNav a:active 
+{ 
+    color: #006071; 
+}
+
+.headerNav a:link, .sidebar a:link 
+{ 
+    color: #6d6e71; 
+}
+h1
+{
+   color:#000000;
+}
+
+h2, h3, h4, h5, h6 
+{
+    color: #000000; /*#006272;*/
+}
+
+#breadcrumbs 
+{ 
+    color: #808285; 
+}
+#breadcrumbs a
+{
+	color: #006071;
+}
+
+#contentArea #ppsrForm legend 
+{ 
+    color: #247272; 
+}
+
+#menu ul {
+    background:#e6fcff; /*#caeaf0; */
+}
+
+#contentArea .content 
+{ 
+    /*border-top: 1px solid #247272; */
+}
+
+.footer {
+    border: none;
+    /*background: linear-gradient(to right,#005257 25%,#006272 70%,#6Fc1c2 100%);*/
+    /* background: #e7f7fa;  url(../images/bodybg.jpg) repeat-y scroll center top !important; */
+}
+.footer a {
+	color: white; /*#747579;*/
+}
+#mainContainer 
+{
+    background-color: #ffffff; /*#e6fcff;*/
+}
+#mainContainer-scroll #contentArea .content 
+{ 
+    border-top: 1px solid #247272; 
+}
+#mainContainer #main
+{
+	background-color: white;
+}
+input[disabled], input[readonly], select[disabled], select[readonly], checkbox[disabled], checkbox[readonly], textarea[disabled], textarea[readonly] 
+{
+    background-color: #BABBB1;
+    /*border: #000000 1px solid;
+ color: #000000;*/
+    cursor: default;
+}
+input[type="image"], input[type="radio"] 
+{
+    background-color:transparent !important;
+}
+.ExpandoPanel
+{
+    border-left: 1px dashed #207986;
+    border-bottom: 1px dashed #207986;
+    border-right: 1px dashed #207986;
+}
+.headingList
+{
+    color: #006071;
+}

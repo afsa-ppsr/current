@@ -1,0 +1,88 @@
+﻿ 
+/*Styles for Spd (Secured party detail) */
+/* new classes - to make ASIC and ABR the same */
+
+.SpdVerifyResult {
+    float: left;
+    width: 250px;
+    margin: 0 0 10px 0;
+    text-align: left;
+    padding: 1px 10px;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+    .SpdVerifyResult label {
+        padding-left: 10px;
+    }
+    .SpdVerifyResult .inputField {
+        margin-left: 0px;
+        padding-left: 10px;
+        display: inline-block;
+        width: 300px;
+    }
+/* old classes */
+.SpdOrgName {
+    float: left;
+    width: 300px;
+    margin: 0 0 10px 0;
+    text-align: left;
+    padding: 1px 10px;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+
+
+.SpdBizName {
+    float: left;
+    width: 305px;
+    margin: 0 0 10px 0;
+    text-align: left;
+    padding: 1px 10px;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.SpdAbrVerifyResult {
+    float: left;
+    width: 250px;
+    margin: 0 0 10px 0;
+    text-align: left;
+    padding: 1px 10px;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+
+.SpdFormContentPanel
+{
+    padding: 5px 0px 10px 0px;
+}
+
+
+/*Styles for Spg (Secured party group) */  
+  
+.SecuredPartyGroupWarningDuplicateNickname 
+{
+    color:#FF0000;
+}
+
+
+.SpgIntroductionRetrieveError
+{
+  color: Red;
+  display: inline-block;  /* inline block allows the positioning of text next to an element but stops the text wrapping underneath */ 
+  width: 150px;
+  margin: 0px 0 0 10px;
+  text-align: left;
+  vertical-align: top;
+  line-height: normal;
+}
+
+.groupRegistrationFilterLabel
+{
+    width: 150px;
+    display: inline-block;
+    float: left;
+}

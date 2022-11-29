@@ -1,0 +1,425 @@
+﻿/* This file controls all 'structural' CSS values.  */
+
+/*Base changes*/
+
+/* ------------------------
+wrap
+------------------------ */
+
+#wrap
+{
+    margin: 0 auto;
+	width: 990px;
+	padding: 0px 15px 0px 15px;
+}
+
+/* ------------------------
+headerNav
+------------------------ */
+
+.headerNav 
+{
+    position: relative;
+    padding: 0px;
+    height: 117px;
+    padding-top: 1px;
+    /*background: url(../images/austgov_logo.gif) no-repeat right top;*/ /*cre8ive*/
+    z-index: 100;
+}
+
+.headerNav h1
+{
+	position: relative;
+	overflow: hidden;
+	width: 600px;
+	height: 120px;
+	margin: 0px;
+	margin-top:-1px;
+}
+
+.headerNav a span
+{
+	position: relative;
+	width: 600px;
+	height: 90px;
+}
+
+.headerNav h1 span
+{
+	position: absolute;
+	width: 600px;
+	height: 90px;
+	display: block;
+	/*background: url(../images/logo.gif) no-repeat;*/	/*cre8ive*/
+}
+
+/* ------------------------
+mainContainer
+------------------------ */
+
+#mainContainer
+{
+    /*display:inline-block;*/
+	float: left;
+	width: 970px;
+	min-height: 300px;
+	padding: 10px 0 20px 20px;		
+	height: 100%;	
+}
+
+/* ------------------------
+main
+------------------------ */
+
+#main
+{
+    float: left;
+    padding-bottom: 3px;
+	width: 765px;
+}
+
+/* ------------------------
+breadcrumbsNav
+------------------------ */
+
+.breadcrumbsNav
+{
+	/*float: left;*/
+	/*width: 670px;*/
+	padding: 8px;
+	font-size: 8pt;
+	line-height: 2em;
+	height: 3em;
+	border-bottom: 1px dashed #64c8d4;
+}
+
+#breadcrumbs dl
+{
+	float: left;
+	/*width: 320px;*/
+	margin: 0;
+	padding: 0;
+}
+
+#breadcrumbs dt
+{
+	float: left;
+	margin: 0 .5em 0 0;
+}
+
+#breadcrumbs dd
+{
+    float: left;
+	background-image: url(../Images/bcarrow.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	padding-left: 16px;
+}
+
+#breadcrumbs dd.first
+{
+	background-image: none;
+	padding-left: 0;
+}
+
+.options {
+	position: relative;
+}
+.options ul
+{
+	margin: 0;
+	padding: 0;
+	top:0px;
+	right:0px;
+	line-height: 3.5em;
+	height: 1.5em;
+	padding: 8px;
+	font-size: 8pt;
+	text-align: right;
+	position: absolute;
+}
+
+.options li
+{
+	display: inline;
+	list-style-type: none;
+	margin: 0 0 0 1em;
+	padding: 0 0 5px 22px;
+	
+	/*Styles Added by PR*/
+ 	background: url(../images/icons.gif) no-repeat 0 -100px;
+}
+
+    .options li.print
+    {
+
+        /*Styles Added by PR*/
+        background: url(../images/printer.svg) no-repeat;
+        background-size: 68%;
+        background-position: left 0px top 0px !important;
+    }
+
+
+#contentArea .content {
+	padding: 0em 0.8em 1em 0.8em;
+}
+
+#contentArea {
+	width: 765px; /* Stops IE6 getting widths wrong */
+	overflow: hidden; /* ensures any slight miscalculations (with IE6) don't wreck the page */
+}
+
+#contentArea #ppsrForm
+{
+	margin: 1em 0;
+	padding: 0;
+}
+
+#contentArea #ppsrForm *
+{
+	margin: 0;
+	padding: 0;
+}
+
+#contentArea #ppsrForm fieldset
+{
+	border: none;
+	margin: 0 0 1em;
+}
+
+#contentArea #ppsrForm label { margin: 0 10px 0 0; }
+#contentArea #ppsrForm label input { margin: 0 5px 0 0; }
+
+/* ------------------------
+sidebar
+------------------------ */
+
+.loginValue
+{
+    margin-bottom: 5px;
+    line-height: 15px;
+    width: 150px;
+}
+
+.loginLabel
+{
+    padding-left: 0px; 
+    margin-right: 5px; 
+    padding-top: 0px; 
+    line-height: 15px;
+}
+
+.sidebar
+{
+    float: right;
+	/*width: 280px;*/
+	
+	/*Styles Added by PR*/
+	width: 190px;
+}
+    .sidebar .login, .sidebar .sendcopies, .sidebar .recentsearches {
+        margin-bottom: 5px;
+    }
+
+.sidebar .quicklinks {
+    padding: 0px 15px 15px 0px;
+}
+
+.sidebar .login ul, .sidebar .quicklinks ul, .sidebar .recentsearches ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar .login li, .sidebar .quicklinks li, .sidebar .recentsearches li { list-style-type: none; }
+
+.sidebar .login h3, .sidebar .quicklinks h3, .sidebar .recentsearches h3 { font-size: 1.2em; }
+
+.sidebar .content {
+    background: #F6F7FA; /*white url(../images/sidebaritem-bg.gif) repeat-x bottom left;*/
+    padding: 10px 10px 18px 10px;
+    /*border: 1px solid #9ea0a2;*/
+    border-bottom: none;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    border-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    -moz-border-radius-bottomright: 8px;
+    font-size: 8pt;
+    width: 153px;
+    overflow: hidden;
+}
+
+.sidebar .content h3 {
+    color: #686E9F;  /*#006071;*/
+    font-size: 10pt;
+}
+.sidebar strong {
+    color: #686E9F; 
+   
+}
+.sidebar input[type="submit"], .sidebar input[type="button"] 
+{
+    padding: 3px 15px 3px 15px;
+    border-radius: 10px;
+    background-color: #686E9F;
+    color: white;
+    border: 2px solid #686E9F;
+    min-width: 50px;
+    font-weight: bold;
+    font-size: 12px;
+}
+ 
+    /* overrides to make long InputLabel fit a narrow sidebar */
+    .labelWithoutLineBreak .lblHolderMain {
+        display: inline;
+    }
+
+
+.labelWithoutLineBreak .lblHolder {
+    float: none;
+    display: inline;
+}
+
+/* ------------------------
+footer
+------------------------ */
+#foot
+{
+	margin-top: -5px;
+	background: url(../images/footbg.jpg) no-repeat scroll center bottom !important;
+	width: 990px;
+	padding: 0px 15px 13px 15px;
+	margin: auto;
+}
+
+.footer
+{
+    margin: 0 auto;
+	margin-top: -1px;
+    width: 975px;
+    padding: 8px 7px 8px 8px;
+}
+
+.footer ul
+{
+	padding: 8px;
+	margin: 0px 9px;
+    display: block;
+    /*background-color: white;*/
+}
+
+.footer li
+{
+	list-style-type: none;
+	display: inline;
+	margin: 0 1em 0 0;
+}
+
+/* ------------------------
+mainContainer-scroll
+------------------------ */
+
+#mainContainer-scroll
+{
+	clear: both;
+	float: left;
+	width: 990px;
+	padding: 0 0 20px 0;
+/* 	background: url(../images/back-maincontainer.gif) repeat-y 100% 0; */
+}
+
+#mainContainer-scroll #main
+{
+	float: left;
+	width: 689px;
+	height: 400px;
+	margin: 0 0 0 20px;
+	display: inline;
+	overflow: auto;
+}
+
+#mainContainer-scroll .breadcrumbsNav
+{
+	float: left;
+	/*width: 660px;*/
+	padding: 10px 0 15px;
+}
+
+#mainContainer-scroll #breadcrumbs dl
+{
+	float: left;
+	/*width: 360px;*/
+	margin: 0;
+	padding: 0;
+}
+
+#mainContainer-scroll #contentArea .content
+{
+	padding: 1em 0 0;
+	width: 660px;
+}
+
+#mainContainer-scroll #contentArea .content p { width: 600px; }
+#mainContainer-scroll .sidebar { padding-top: 10px; }
+
+/* ------------------------
+ContentID hover text
+------------------------ */
+
+a.tt { position:relative; }
+a.tt span.tooltip { display:none; }
+a.tt:hover span.tooltip, a.tt:focus span.tooltip 
+{
+	display:block; 
+	position:absolute; 
+	min-width:100px; 
+	border:1px solid #999999; 
+	padding:7px; 
+	z-index:30; 
+	top:50%; 
+	left:0; 
+	background-color:#FFFFE1; 
+	color:#000000; 
+	font-weight:normal; 
+	text-decoration: none; 
+}
+
+/* ------------------------
+No JavaScript Check
+------------------------ */
+
+#no-script-check > noscript{
+    display: inline-block;
+    padding: 2em;
+    background-color: #FFFFFF;
+}
+
+/*-----------------
+ The following style is added for reference only. It is placed in Content 101960
+-----------------------*/
+/*.tooltip {
+    position: relative;
+}
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        position: absolute;
+        min-width: 400px;
+        border: 1px solid #999999;
+        padding: 5px;
+        z-index: 9999;
+        top: 100%;
+        left: 95%;
+        margin-left: -380px;
+        background-color: #FFFFE1;
+        color: #000000;
+        font-weight: normal;
+        text-decoration: none;
+        pointer-events: all;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        display: block;
+    }*/

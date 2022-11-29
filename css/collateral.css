@@ -1,0 +1,178 @@
+﻿.CollateralRegistrationNavigation
+{
+    text-align: right;
+}
+.CollateralRegistrationVerificationInformation 
+{
+    position: relative;
+    margin-right: 200px;
+    margin-left: 170px;
+}
+.CollateralRegistrationBG {
+    background-color: #f3f7f8;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px
+}
+
+.CollateralRegistrationDataGrindIntroduyctoryText 
+{
+    margin-left: 4px;
+}
+
+.CollateralRegistrationIncompleteSaveFieldPanel 
+{
+    position: relative;
+}
+
+.CollateralRegistrationIncompleteSaveField 
+{
+    position: absolute;
+    left: 250px;
+}
+.CollateralRegistrationLandingLeft 
+{
+    float:left;
+    width: 49%;
+}
+.CollateralRegistrationLandingRight 
+{
+    float: right;
+    width: 49%;
+}
+
+
+.CollateralDetailText 
+{
+  float: left;
+  width: 200px;
+  padding:0px 0 0px 0;
+  line-height: normal;
+}
+
+.CollateralDetailValue 
+{
+  float: left;
+  width: 250px;
+  padding:0px 0 0px 0;
+  line-height: normal;
+}
+
+.RegistrarAlertPanel 
+{
+    text-align: left;
+    color: Red;
+}
+
+.RegistrarOverrideWarningText 
+{   
+    margin-top: 0px;
+    color: Red;
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+.RegistrarOverrideWarningLabel
+{
+    padding-right: 10px;
+}
+
+.RegistrarOverrideWarningLabelLeft
+{
+    float: left;
+    max-width: 600px;
+    max-height: 1000px;
+    text-align: left;
+}
+.RegistrarOverrideReviewHeading
+{
+    color: Red;
+    line-height: normal;
+    font-weight: bold;
+    font-style:normal;
+    margin-bottom: 6px;
+}
+
+
+/* Following code to overcome inline CSS */
+#ctl00_ctl00_m_pnlProgressWizard {
+
+}
+
+div[id$="AssignedToMe"], div[id$="AssignedToOthers"] {
+    background-color: #6fc1c2 !important;
+}
+
+/* Collateral Registration Templates */
+
+.registration-templates .template-search-results-table,
+.registration-templates .template-history-table
+ {
+    width: 100%;
+}
+
+.registration-templates .validationSummary {
+    clear: both;
+}
+
+.registrationTemplatesFindButton,
+.templateGroupAssignmentButton,
+.registration-templates-manage > .returnToFindTemplatesLink {
+    float: right;
+    margin-left: 0.25em;
+}
+
+.registration-templates-manage > input[type=submit] {
+    clear: both;
+    float: right;
+    margin-bottom: 1em;
+}
+
+.registration-templates-manage > .name-description-actions {
+    display: block;
+    float: right;
+    text-align: right;
+}
+
+.registration-templates-manage div[id$=manageTemplateGroupsControl_groupsDualList_panel1] {
+    display: none;
+}
+
+.manage-template-actions {
+    clear: both;
+    text-align: right;
+}
+
+.registration-templates-copy input[type=submit]{
+    float: right;
+    margin-left: 0.5em;
+}
+
+.registration-templates-copy-input-values {
+    display: inline-block;
+}
+
+.registration-templates-manage-button {
+    float: right;
+}
+
+.registration-templates-manage-label {
+    width: 24%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.registration-templates-manage-value {
+    width: 75%;
+    display: inline-block;
+    white-space: pre-wrap;
+}
+
+.registration-template-manage-assignedgroup{
+    padding-left: 4px;
+    float: left;
+    clear: left;
+ }
+
+
+
+

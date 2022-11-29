@@ -1,0 +1,12 @@
+﻿
+.WorkbenchPanel 
+{
+    float: left;   
+    width: 70%;
+}
+
+.WorkbenchShortcutPanel 
+{
+    float: right;
+    width: 28%;
+}

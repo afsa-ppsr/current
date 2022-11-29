@@ -1,0 +1,28 @@
+﻿
+.hidden
+{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.accessibilityHeading
+{
+    position:absolute;
+    left:-9999px;
+}
+
+/*
+    Fix for IE8 width for drop downlist in B2G Mailbox
+    Side-effects: Makes firefox users have to click to select 
+    the drop down then click again for the drop down to appear
+
+    Still investigating.
+*/
+.focusClass:focus 
+{
+    width:auto !important;
+    position: absolute;
+}

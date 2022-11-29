@@ -1,0 +1,1971 @@
+﻿.registrationDetailsFirstLine
+{
+	color: #0000FF;
+}
+
+.registrationDetailsFirstLine a:link {color: #0000FF;}
+.registrationDetailsFirstLine a:visited {color: #0000FF;}
+.registrationDetailsFirstLine a:hover {color: #0000FF;}
+.registrationDetailsFirstLine a:active {color: #0000FF;}
+
+.restrictionDetailsMessage
+{
+	color: red;
+	font-weight: bold;
+	float: right; 
+	width: 35%;
+	clear: right;
+}
+
+
+.registrationDetailsLastLine
+{
+	color: #3E8BFF;
+	
+}
+.floatRight { float:right; }
+.floatLeft { float:left; }
+.smallistFont { font-size: 0.8em }
+.smallerFont { font-size: 0.9em }
+.smallFont { font-size: 0.95em }
+.w100 { width: 100px; }
+.w125 { width: 125px; }
+.w150 { width: 150px; }
+.w200 { width: 200px; }
+.w220 { width: 220px; }
+.w250 { width: 250px; }
+.w260 { width: 260px; }
+.w300 { width: 300px; }
+.w350 { width: 350px; }
+.w400 { width: 400px; }
+.w500 { width: 500px; }
+/* :TODO: these margins should all be flagged with important.  We shoul only be using these classes if we want that specifc margin*/
+.marginLeftMinus5 {
+    margin-left: -5px !important;
+}
+.marginLeftZero {
+    margin-left: 0px !important;
+}
+.marginLeft5 {
+    margin-left: 5px !important;
+}
+
+.marginLeft8   { margin-left: 8px; }
+.marginLeft10 {
+    margin-left: 10px !important;
+}
+.marginLeft15 {
+    margin-left: 15px !important;
+}
+.marginLeft20 {
+    margin-left: 20px !important;
+}
+.marginLeft25 {
+    margin-left: 25px !important;
+}
+.marginLeft40   { margin-left: 40px; }
+.marginLeft50   { margin-left: 50px; }
+.marginLeft60   { margin-left: 60px; }
+.marginLeft80   { margin-left: 80px; }
+.marginLeft130   { margin-left: 130px; }
+/* the following style was added for aligning Verify button with Identifier input field*/
+.marginLeft142 { margin-left: 142px !important;}
+.marginLeft215 { margin-left: 215px; }
+.marginLeft250 { margin-left: 250px; }
+.marginLeft300 { margin-left: 300px; }
+.marginRight5   { margin-right: 5px; }
+.marginRight10   { margin-right: 10px; }
+.marginRight20   { margin-right: 20px; }
+.marginRight130 { margin-right: 130px; }
+
+.marginTop4 { margin-top: 4px; }
+.marginTop10   { margin-top: 10px; }
+.marginTop16   { margin-top: 16px; }
+.marginTop20   { margin-top: 20px; }
+.marginBottom2 { margin-bottom: 4px; }
+.backgroundGrey {
+    background-color: #F3F7F8; /*#b8e3ea;*/
+    padding: 5px;
+}
+.backgroundGrey input[type="submit"] {
+    background-color: #006272 !important;
+    color: white !important;
+    border: 1px solid #006272 !important;
+    border-radius: 5px !important;
+    padding: 0px 3px 0px 3px !important;
+    min-width: 10px !important;
+}
+.backgroundGrey input[type="submit"]:disabled {
+    background-color: #dcdcdc !important;
+    color: #9E9E9E !important;
+    border-radius: 5px !important;
+    border: 1px solid #dcdcdc !important;
+    padding: 0px 3px 0px 3px !important;
+    min-width: 10px !important;
+}
+.backgroundGrey span[title$="Page"] 
+{
+    color: #999C9F;
+}
+.borderGrey { border-color:#F3F7F8; }   /*#A9A9A9;*/
+.borderAll { border-width:1px; border-style:solid; }
+.borderBottom { border-bottom-width:1px; border-bottom-style:solid; }
+.borderTop { border-top-width:1px; border-top-style:solid; }
+.borderLeft { border-left-width:1px; border-left-style:solid; }
+.borderRight { border-right-width:1px; border-right-style:solid; }
+.noborder { border: none; }
+.bold { font-weight:bold; }
+.alignLeft { text-align:left }
+.paddingTop10 {
+    padding-top: 10px !important;
+}
+.paddingLeftZero {
+    padding-left: 0px !important;
+}
+.paddingLeft5 {
+    padding-left: 5px !important;
+}
+.paddingLeft10 {
+    padding-left: 10px !important;
+}
+.paddingLeft20 {
+    padding-left: 20px !important;
+}
+
+
+.paddingBottom10 {
+    padding-bottom: 10px !important;
+}
+.verticalAlignMiddle { vertical-align:middle }
+.disabled { background-color: #E2E2E2; }
+/*---------- Misc styles ----------*/  
+.hidden
+{
+    display:none;
+}
+
+br
+{
+  clear:both;
+}
+
+label
+{
+  padding-left: 3px;    
+}
+.lblHolder
+{
+  float:left;
+  /*width: 90%;*/
+}
+.lblHolderMain
+{
+  /*float: left;*/
+  /*width: 100%;*/
+  vertical-align:bottom; 
+}
+
+
+.mandatory
+{
+  height:10px;
+  width:10px;
+  padding-left: 5px;  
+}
+
+.progressWizardLink
+{
+    float:left;
+    margin-right:0;
+    padding:0;
+    height:75px;
+    text-align:center;
+}
+
+.cleaner 
+{
+    clear:both;
+    height:1px;
+    overflow:hidden;
+    padding:0px;
+    margin:0px;  
+}
+.cleaner5 {
+    clear: both;
+    height: 5px;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+.tester123 
+{
+    background-color: #FFFF00;
+}
+
+
+/*---------- Panel styles ----------*/  
+.formPanel
+{
+    width: 100%;
+}
+
+.formContentPanel {
+}
+
+.formContentPanelIndent {
+
+}
+
+/* Test code for CMS content */
+ /*.formFocusContentPanel
+{
+   border:solid 1px blue;   
+}*/
+
+
+.formFocusPanel {
+    background-color: #F3F7F8;
+    padding: 5px;
+    border-style: none;
+}
+
+.formFocusContentPanelWithLessPad {
+    /*background-color: #e4fafd;*/
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 1%; /* Needed to stop IE from randomly not showing fully filled background during scrolling */
+}
+    .formFocusContentPanelWithLessPad div {
+        /*background-color: #e4fafd;*/
+    }
+.formFocusContentPanelWithNoPad {
+    /*background-color: #e4fafd;*/
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 1%; /* Needed to stop IE from randomly not showing fully filled background during scrolling */
+}
+
+.formActiveFocusPanel
+{
+    background-color: #F3F7F8;/*#ccf8ff;*/
+    padding: 5px;
+    height: 1%; /* Needed to stop IE from randomly not showing fully filled background during scrolling */
+}
+    .formActiveFocusPanel div {
+        background-color: #F3F7F8; /*#ccf8ff;*/
+    }
+
+.formFocusPanel h5 {
+    margin-left: 15px;
+}
+
+/*---------- Input styles ----------*/  
+.inputlabel
+{
+  float: left;
+  margin: 2px 0 0 0;
+  text-align: left;
+  padding: 0px 0 3px 15px;
+  vertical-align: middle;  
+  font-weight: bold;
+  
+}
+
+.contentText
+{
+  float:left;
+  margin: 2px 0 0 0;
+  text-align: left;
+  padding: 0px 0 3px 0;
+  vertical-align: middle;  
+  font-weight: normal;
+  width:90%; /* needs to be 90% so accessibility mode doesn't blow out the width on main page content */
+}
+
+.validationMessageText
+{
+  float: left;
+  clear:both;
+  margin: 2px 0 0 15px;
+  text-align: left;
+  padding: 0px 0 3px 0;
+  vertical-align: middle;  
+  
+}
+
+.inputField, .inputFieldNoWidth {
+    display: inline;
+    padding: 1px 3px;
+    margin: 2px 0 0 15px;
+}
+
+.inputFieldLabel
+{
+  float: left;
+  /*width: 150px;*/
+  margin: 2px 0 0 15px;
+  padding: 0px 0 3px 0;
+  vertical-align: middle;  
+}
+
+
+/* aligns better with input label */  
+.inputFieldTextBox 
+{
+  float: left;
+  padding: 1px 1px 1px 1px;
+  margin: 3px 0px 0px 15px;
+}
+
+.inputFieldTextBoxInline
+{
+  padding: 1px 1px 1px 1px;
+  margin: 3px 0px 0px 15px;
+}
+
+/* aligns better with input label */  
+.inputFieldButtonInline
+{
+  float: left;
+  padding: 0px 0px 0px 0px;
+  margin: 2px 0px 0px 5px;
+}
+
+.inputFieldText 
+{ 
+  float: left;
+  /*width: 300px;*/
+  margin: 0px 0 0 15px;
+  text-align: left;
+}
+
+.inputFieldTextInline 
+{ 
+  float: left;
+  margin: 2px 0 0 5px;
+  text-align: left;
+}
+
+.inputFieldButton
+{
+  padding: 1px 5px;
+  margin: 2px 0 0 15px;
+}
+
+.inputFieldHidden
+{
+  display: none;
+}
+
+.inputFieldCheckBox {
+    display: block;
+    width: 300px;
+    padding: 1px 5px;
+    margin: 2px 0 0 10px;
+    text-align: left;
+}
+.inputFieldCheckBoxNoWidth {
+    display: block;
+    padding: 1px 5px;
+    margin: 2px 0 0 10px;
+    text-align: left;
+}
+/*  #802 smaller checkbox text size  */
+.inputFieldCheckBoxSamllerText {
+    font-size:11px;
+}
+/*___________________________________*/
+.inputFieldCheckBoxInline
+{
+  float: left;
+  margin: 3px 0 0 11px;
+}
+
+.inputFieldDropDownList 
+{
+  width: 200px;
+  padding: 1px 3px;
+  margin: 2px 0 0 15px;
+}
+
+.inputFieldNote
+{
+  display: block;
+  width: 300px;
+  padding: 1px 0px;
+  margin: 2px 0 0 15px;
+  text-align: left; 
+}
+
+.inputFieldDefault
+{
+  margin: 2px 0 0 15px;
+  text-align: left;  
+}
+
+.inputRadioButtonGroup
+{
+  float:left;
+  padding: 1px 10px;  
+  margin: 2px 0 0 5px;
+}
+
+.inputTextBlock 
+{
+  float:left;
+  margin:2px 0 0 15px;
+}
+
+.inputTextBlockInline
+{
+  float:left;
+  margin:2px 0 0 25px;
+}
+
+/* The .outputXXX classes aer equivalents to the .inputXXX classes, but used when the field is displayed as text (in a span, not editable)
+    generally hte differnt is no left padding
+*/
+.outputField {
+    display: inline;
+    padding: 1px 0px;
+    margin: 2px 0 0 15px;
+}
+
+.dtlabel
+{
+    clear: both;
+  float: left;
+  margin: 2px 0 0 0;
+  text-align: left;
+  padding: 0px 0 3px 0;
+  vertical-align: middle;  
+  font-weight: bold;
+  
+}
+
+.ddLabel
+{
+    clear: both;
+  float: left;
+  /*width: 150px;*/
+  margin: 2px 0 0 15px;
+  padding: 0px 0 3px 0;
+  vertical-align: middle;  
+}
+
+/*Validation styles*/  
+/****************************************************/
+.validationSummary 
+{
+    background-position: 12px 12px !important;
+    color: #333333;
+    padding: 5px 0 0 40px;
+    background-color: #FFF5F3;
+    background-image: url('../images/exclamationMarkOrange.svg');
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+.validationSummary h3
+{
+    color: #333333;
+    margin-top: 5px;
+}
+.validationSummary ul
+{
+    margin-left: 15px;
+    padding-bottom: 5px;    
+}
+.validationSummary ul li
+{
+    /*color: #525252;*/
+    list-style-type: inherit;      
+}
+
+.validationText
+{
+  clear:both;
+  margin: 2px 0 0 15px;
+}
+
+.validationTextNoMarginBold
+{
+    clear:both;
+    margin: 2px 0 0 0;
+    font-weight: bold;
+}
+
+/****************************************************/
+
+/*Waring styles*/
+/* the same as validatoin summary - different icon*/  
+/****************************************************/
+.warningSummary
+{
+    background-position: 22px 12px; /* icon is bigger, so need to bring it up and to the left*/
+    color: #333333;
+    padding: 5px 0 0 40px;
+    background-color: #FFF5F3;
+    background-image: url('../images/information.svg');
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.warningSummary h3
+{
+    color: #333333;
+    margin-top: 5px;
+}
+.warningSummary ul
+{
+    margin-left: 15px;
+    padding-bottom: 5px;    
+}
+.warningSummary ul li
+{
+    /*color: #525252;*/
+    list-style-type: inherit;      
+}
+
+.warningSummary
+{
+  margin-bottom: 12px;
+}
+.informationalSummary
+{
+    margin: 5px 0 0 0px;
+    padding: 5px 0 0 50px;
+    border-radius: 10px;
+}
+
+.informationSummaryMessageList {
+    margin-top: 1em;
+    padding-bottom: 1em !important;
+}
+
+/****************************************************/
+/* Targeted notices styles */
+
+/****************************************************/
+
+.targetNoticeInfoSummary {
+    color: #333333;
+    padding: 5px 0 0 40px;
+    border-radius: 10px;
+}
+
+    .targetNoticeInfoSummary h3 {
+        color: #333333;
+        margin-top: 5px;
+    }
+
+    .targetNoticeInfoSummary ul {
+        margin-left: 15px;
+        padding-bottom: 5px;
+    }
+
+        .targetNoticeInfoSummary ul li {
+            /*color: #525252;*/
+            list-style-type: inherit;
+        }
+
+.targetNoticeInfoSummary {
+    margin-bottom: 12px;
+}
+
+/**********************/
+
+.targetNoticeRedAlertSummary {
+    background-position: 5px 5px; /* icon is bigger, so need to bring it up and to the left*/
+    background-color: #FF4d4d;
+    background-image: url('../images/exclamationMarkOrange-reverse.svg');
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.targetNoticeOrangeInfoSummary {
+    background-position: 5px 5px; /* icon is bigger, so need to bring it up and to the left*/
+    background-color: #FFCC66;
+    background-image: url('../images/information.svg');
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.targetNoticeYellowInfoSummary {
+    background-position: 5px 5px; /* icon is bigger, so need to bring it up and to the left*/
+    background-color: #FFFFCC;
+    background-image: url('../images/information.svg');
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.targetNoticeGreenInfoSummary {
+    background-position: 5px 5px; /* icon is bigger, so need to bring it up and to the left*/
+    background-color: #8cd98c;
+    background-image: url('../images/information.svg');
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}  
+
+
+/****************************************************/
+
+/*Registration Violation styles*/  
+/****************************************************/
+.registrationViolationSummary
+{
+    background-position: 0 4px;
+    color: #333333;
+    padding: 5px 0 0 40px;
+    background-color: #FFCC66;
+    background-image: url('../images/information.svg');
+    background-repeat: no-repeat;
+}
+.registrationViolationSummary h3
+{
+    color: #333333;
+}
+/****************************************************/
+
+
+/*Field Help styles*/
+/****************************************************/  
+.fieldHelpButton
+{ 
+    margin-left:10px;
+    vertical-align:middle;
+    width:14px;
+    height:14px;
+}
+
+.fieldHelpLabel
+{
+    display: none;
+    position: absolute;
+    border: 1px solid #999999;
+    padding: 4px 6px 4px 6px;
+    background-color: #FFFFE1;
+    cursor:default;    
+}
+
+.fieldHelpHoverText
+{ 
+  color: #006071;   
+}
+
+/****************************************************/
+
+
+.criticalnotice
+{
+    display: block;
+    margin-top:25px;
+}
+.criticalnotice ul
+{
+    margin-left: 30px;   
+    list-style-type: disc; 
+}
+.criticalnotice em
+{
+    font-style: italic;
+}
+
+.criticalnotice strong em
+{
+    font-weight: bold;
+}
+
+.criticalnoticetitle
+{
+    font-size:10pt;
+}
+
+.criticalnoticebody
+{
+    font-size: 9pt;
+}
+
+.criticalnoticemessage ul , .criticalnoticemessage ol
+{
+    margin-bottom: 1em;
+}
+
+.criticalnoticemessage .text-tiny {
+    font-size: 0.7em;
+}
+
+.criticalnoticemessage .text-small {
+    font-size: 0.85em;
+}
+
+.criticalnoticemessage .text-big {
+    font-size: 1.4em;
+}
+
+.criticalnoticemessage .text-huge {
+    font-size: 1.8em;
+}
+
+/*Rounded Panel styles*/  
+/****************************************************/
+.roundedPanel
+{
+    position: relative;
+    margin-right: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #FFFFFF;
+    height:100%;
+}
+
+.roundedPanelTopLeft 
+{
+    background-image: url("../Images/RoundedPanel/topLeft.gif");
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 16px;
+    height:16px;
+}
+
+.roundedPanelTopRight 
+{
+    background-image: url("../Images/RoundedPanel/topRight.gif");
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 16px;
+    height:16px;
+}
+
+.roundedPanelBottomLeft 
+{
+    background-image: url("../Images/RoundedPanel/bottomLeft.gif");
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    width: 16px;
+    height:16px;
+}
+
+.roundedPanelBottomRight 
+{
+    background-image: url("../Images/RoundedPanel/bottomRight.gif");
+    position: absolute;
+    left: 100%;
+    top: 100%;
+    width: 16px;
+    height:16px;
+}
+
+.roundedPanelLeft 
+{
+    background-image: url("../Images/RoundedPanel/left.gif");
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 16px;
+    height:100%;
+}
+
+.roundedPanelRight 
+{
+    background-image: url("../Images/RoundedPanel/right.gif");
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 16px;
+    height:100%;
+}
+
+.roundedPanelTop 
+{
+    background-image: url("../Images/RoundedPanel/top.gif");
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height:16px;
+}
+
+.roundedPanelBottom
+{
+    background-image: url("../Images/RoundedPanel/bottom.gif");
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    width: 100%;
+    height:16px;
+}
+
+.roundedPanelHeading 
+{
+    position: absolute;
+    top: -11px;
+    left: 20px;
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    padding: 8px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.roundedPanelContent 
+{
+    padding-left: 16px;
+    padding-top: 24px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+}
+
+.roundedPanelAlternative 
+{
+    color: #000000;
+    border: 1px solid #AAAAAA;  
+    padding-right: 16px;  
+    padding-bottom: 16px;
+}
+.fieldset-V2 {
+    width: 97%; /* default */
+    position: relative;
+    padding: 0.5em 0.8em 1em 0.8em;
+    border: 0.1px solid #F2F2F2;
+
+    border-bottom-width:thick;
+    background-color: #FFF;
+    /* Mozilla / Firefox round corners */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    /*margin-top: 10px;*/
+    margin: 10px 2px 10px 0px
+}
+.fieldset { 
+	width: 97%; /* default */
+	position: relative; 
+	padding: 1.75em 0.8em 0.5em 0.8em;
+	border: 1px solid #AAAAAA;	
+	background-color: #FFF;
+	/* Mozilla / Firefox round corners */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin: 5px 2px 5px 0px
+    
+}
+.fieldsetHead{ 
+	position: absolute;
+	/*width: 29em;*/
+	/*top: 0.5em; left: 1em;*/
+	color: #0b575e;
+	font-weight: bold;
+}
+
+/* #435 */
+.column-left-20 {
+    float: left;
+    width: 20%;
+}
+
+.column-right-80 {
+    float: right;
+    width: 80%;
+}
+
+.whiteTextOnColouredBackground {
+    background-color: #006272;
+    color: white !important;
+}
+
+.row-for-colored-panel:after {
+    content: "";
+    display: table;
+    clear: both;   
+}
+
+.whiteTextOnColouredBackground a:link {
+    color: white !important;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.whiteTextOnColouredBackground a:visited {
+    color: white !important;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.whiteTextOnColouredBackground a:hover {
+    color: white !important;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+
+.whiteTextOnColouredBackground a:active {
+    color: white !important;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.colouredTextOnWhiteBackground {
+    background-color: white;
+    color: #006272 !important;
+}
+
+.colouredTextOnWhiteBackground a:link {
+    background-color: white;
+    color: #006272 !important;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.colouredTextOnWhiteBackground a:visited {
+    background-color: white;
+    color: #006272 !important;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.colouredTextOnWhiteBackground a:hover {
+    background-color: white;
+    color: #006272 !important;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.colouredTextOnWhiteBackground a:active {
+    background-color: white;
+    color: #006272 !important;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+ 
+/*#345*/
+.coloredBackground {
+    background-color: #e5e5e5;
+    opacity: 0.15;
+    z-index: 0;
+    position: relative;
+}
+
+.coloredBackgroundNoOpacity {
+    background-color: #e5e5e5;
+   
+}
+
+/*#360*/
+.coloredBorder {
+border: 1.5px solid #006272;
+}
+/*#360*/
+.coloredText {
+    color: #006272 !important;
+}
+.imageHeadCentered {
+    position: absolute;
+    top: -4em;
+    left: 5.5em;
+    padding: 0 6.4px 0 6.4px;
+    background: #FFF;
+   
+}
+    .imageHeadCentered:hover {
+        position: absolute;
+        top: -4em;
+        left: 5.5em;
+        padding: 0 6.4px 0 6.4px;
+        background: #FFF;
+     
+    }
+
+.imageHeadCenteredInHalfTable {
+    position: absolute;
+    top: -4em;
+    left: 9em;
+    padding: 0 0.4em;
+    background: #FFF;
+   
+}
+.imageHeadCenteredInHalfTable:hover {
+    position: absolute;
+    top: -4em;
+    left: 9em;
+    padding: 0 0.4em;
+    background: #FFF;
+}
+/*#361*/
+.imageHead {
+    position: absolute;
+    top: -1.6em;
+    left: 2em;
+    padding: 0 0.4em;
+    background: #FFF;
+}
+.fieldsetHead {
+    top: -0.9em;
+    left: 1em;
+    padding: 0 0.2em;
+    background: #FFF;
+    /*border: 1px solid #000;*/
+}
+
+h2.fieldsetHead
+{ 
+    position: absolute;
+	color: black; /*#0b575e;*/
+	font-weight: bold;
+	top: -0.9em; left: 1em;
+	padding: 0 0.2em;
+	background: #FFF;
+}
+
+h2.fieldsetHeadColored {
+    position: absolute;
+    color: red; /*#0b575e;*/
+    font-weight: bold;
+    top: -0.9em;
+    left: 1em;
+    padding: 0 0.2em;
+    background: #FFF;
+}
+    
+/****************************************************/
+
+.tdHistorySubheadingLabel
+{
+    width: 200px;
+    max-width: 200px;
+    min-width: 200px;
+    vertical-align:top;
+    line-height: 20px;
+    font-weight: bold;
+    /* border-style: solid; */
+}
+
+.tdHistoryLabel
+{
+    width: 200px;
+    max-width: 200px;
+    min-width: 200px;
+    vertical-align:top;
+    line-height: 20px;
+    /* border-style: solid; */
+}
+
+.tdHistoryValue
+{
+    width: 300px;
+    vertical-align:top;
+    word-wrap:break-word;
+    overflow: auto;
+    /* border-style: solid; */
+}
+.tdHistoryValueFixedScroll
+{
+    vertical-align:top;
+    max-height:100px; 
+    overflow:auto; 
+}
+.tdReviewAttachName
+{
+    vertical-align:top;
+    word-wrap:break-word;
+    width: 120px;
+}
+.tdReviewAttachDescription
+{
+    vertical-align:top;
+    word-wrap:break-word;
+    width: 120px;
+}
+.ReviewAttachTable
+{
+}
+
+.tdReviewLabelSingleResult
+{
+    width: 190px;
+    padding-left:15px;
+    vertical-align:top;
+    line-height: 15px;
+}
+
+.tdReviewLabel
+{
+    width: 200px;
+    vertical-align:top;
+    line-height: 15px;
+}
+.tdReviewValue
+{
+    width: 220px;
+    vertical-align:bottom;    
+    line-height: 15px;    
+}
+.tdReviewValueTwoColumn
+{
+    width: 430px;   /* twice the width of tdReview value */
+    vertical-align:bottom;    
+    line-height: 15px; 
+}
+.tdReviewValueNoWrap
+{
+    max-width: 400px;
+    vertical-align:bottom;    
+    line-height: 15px; 
+}
+.tdReviewLabelCompare
+{
+    width: 125px;
+    vertical-align:top;
+    line-height: 15px;
+}
+.tdReviewValueCompare
+{
+    width: 300px;
+    vertical-align:top;    
+    line-height: 15px;    
+}
+.tdReviewArrow
+{
+    width: 20px;    
+    vertical-align:middle;    
+}
+
+.tdReviewCompareOriginal
+{
+    width: 460px;
+    vertical-align:top;
+    line-height: 15px;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.tdReviewCompareAmend
+{
+    width: 300px;
+    vertical-align:top;
+    line-height: 15px;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.reviewArrow
+{
+    width: 20px;
+    vertical-align: middle;
+}
+
+.reviewHeading
+{
+    color: Black;
+    line-height: normal;
+    font-weight: bold;
+    font-style:normal;
+    margin-bottom: 6px;
+}
+
+.reviewSubHeading
+{
+    color: Black;
+    line-height: normal;
+    font-weight: bold;
+    font-style:normal;
+    margin-bottom: 6px;
+}
+.tdReviewRegistrarAlertText
+{
+    width: 450px;
+    vertical-align:top;
+    line-height: 15px;
+     color: Red;
+}
+
+
+.confirmTable 
+{
+    border-collapse: collapse;
+    background-color: White;
+    border-style: solid;
+    border-color: #F3F7F8; /*#A9A9A9;*/
+    border-width: 1px 0;
+}
+.confirmTable td, .confirmTable th
+{
+    padding: 3px 5px;
+    margin: 0px;
+}
+    .confirmTable thead th, .confirmTable th {
+        background-color: #F3F7F8;
+        color: #333333;
+        font-weight: bold;
+        text-align: left;
+        vertical-align: top;
+    }
+.confirmTable tr td 
+{
+    background-color: white;
+    border-top: 1px solid #F3F7F8;
+}
+
+.offleft 
+{
+    position: absolute;
+    left: -9999px;
+}
+
+.confirmHeader 
+{
+    background-color: #D3D3D3;
+    color: #444444;
+    font-weight: bold;
+    text-align: left;
+}
+
+.confirmLabel
+{
+    float:left;
+    width:200px; 
+    text-align:left; 
+    margin:0;
+}
+
+.smallerPadding 
+{
+    padding: 3px 1px;
+    margin: 0px;
+   
+}
+
+.mediumPadding {
+    padding: 5px 5px;
+}
+.largePadding {
+    padding: 10px 10px;
+}
+
+/*   
+    GRID View list
+*/
+.dataTable
+{
+    border-collapse: collapse;
+    border: 1px solid #A9A9A9;
+}
+.dataTable td, .dataTable th
+{
+    border: 1px solid #A9A9A9;
+    padding: 3px 5px;
+    margin: 0px;
+}
+.dataTable thead th
+{
+    background-color: #D3D3D3;
+    color: #444444;
+    font-weight: bold;
+    text-align: left;
+          
+}
+/* Firefox has missing border bug! https://bugzilla.mozilla.org/show_bug.cgi?id=410621 *//* Firefox 2 */html< /**/ /**/ body .dataTable, x:-moz-any-link
+{
+    margin: 1px;
+}
+/* Firefox 3 */html< /**/ /**/ body .dataTable, x:-moz-any-link, x:default
+{
+    margin: 1px;
+}
+
+/* WO 121 Styles created for upgrade to YUI 2.9.0 calendar */
+/* end WO 121 */
+
+/* Clear calendar's float, using dialog inbuilt form element */
+.container { position: absolute; top: -1000; left: -1000; display: none;}
+.container .bd form {
+    clear:left;
+}
+
+/* Have calendar squeeze upto bd bounding box */
+.container .bd {
+    padding:0;
+}
+
+.container .hd {
+    text-align:left;
+}
+
+/* Center buttons in the footer */
+.container .ft .button-group {
+    text-align:center;
+}
+
+
+/* Remove calendar's border and set padding in ems instead of px, so we can specify an width in ems for the container */
+#cal1 {
+    border:none;
+    padding:1em;
+}
+
+/* Workbench styles */
+/****************************************************/
+
+.workbenchTable
+{
+    border-collapse: collapse;
+}
+.workbenchTable td, .workbenchTable th
+{
+    border-bottom: solid 1px #A9A9A9;
+    padding: 3px 5px;
+    margin: 0px;
+}
+.workbenchTable thead th
+{
+    background-color: #D3D3D3;
+    color: #444444;
+    font-weight: bold;
+    text-align: left;
+    vertical-align:top;         
+}
+
+.workbenchTable tbody td
+{
+    vertical-align:top;         
+}
+/****************************************************/
+
+/*Transact on behalf of banner styles*/
+/****************************************************/
+.transactOnBehalfBanner label
+{
+    font-size:medium;
+}
+
+.transactOnBehalfInternalBanner, .transactOnBehalfCasualBanner,
+.transactOnBehalfAccountBanner {
+    margin: 0px auto;
+    width: 705px;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+.transactOnBehalfInternalBanner 
+{
+    background-color: #b5f6d8;
+}
+
+.transactOnBehalfCasualBanner 
+{
+    background-color: #fcf6c2;
+}
+
+.transactOnBehalfAccountBanner 
+{
+    background-color: #fccdd3;
+}
+/****************************************************/
+
+
+/* B2G Mailbox filter styles */
+/****************************************************/
+.filterLabel
+{
+    width: 150px;
+    float: left;
+}
+.filterLabelLong
+{
+    width: 200px;
+    float: left;
+}
+.filterLabelMedium
+{
+    width: 100px;
+    float: left;
+}
+.filterLabelSmall
+{
+    width: 50px;
+    float: left;
+}
+.filterInput
+{
+    width: 100px;
+    float: right;
+    margin: 2px;
+}
+.filterPanelLeft
+{
+    float: left;
+    width: 350px;
+}
+.filterPanelRight
+{
+    float: right;
+    width: 375px;
+}
+/****************************************************/
+
+/* Styles for PpsrDualList common control */
+/****************************************************/
+
+.blockLeft
+{
+    float:left;       
+    /*width:300px; */          
+}
+.blockRight
+{
+    float:left;       
+    /*width:300px;  */     
+}
+.blockNone
+{
+    float:left;
+    text-align:center;      
+    width:120px;     
+}
+.listHeaderForTransferData
+{
+    background-color:#d9f0f4;
+    color:#444444;
+    font-weight:bold;        
+}
+.blockLeft select,.blockRight select
+{
+    border: 1px solid #d9f0f4;
+    border-top: none;
+}
+
+.duallist-left-header,
+.duallist-right-header {
+    width: 275px;
+}
+
+
+/************************************************/
+/* Find Notification Styles */
+
+.fixedTableCellWidth125
+{
+    width: 125px;   
+}
+
+.w125BreakWord
+{
+    display: block;
+    width: 125px;
+    word-wrap:break-word;
+}
+
+
+/******************************************************/
+
+.searchSummaryTable
+{
+    border-collapse: collapse;
+    background-color:White; 
+    border-style:solid;
+    border-color:#EFEFEF;
+    border-width:0.5px;
+
+}
+.searchSummaryTable td, .searchSummaryTable th 
+{
+    padding: 3px 5px;
+    margin: 0px;
+    border: 0.5px solid #EFEFEF;
+}
+.searchSummaryTable thead th
+{
+    background-color: #34798B;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: left;
+    vertical-align:top;
+}
+.searchSummaryTable tr
+{
+    background-color: white;
+}
+.searchSummaryTable tbody tr:nth-child(odd) td
+    {
+    background-color: #F3F7F8; 
+       
+}
+
+.searchSummaryCount 
+{
+    display: inline-block;
+    width: 95%;
+    text-align: right;
+}
+/****************************************************/
+
+/* Styles for accepting declarations */
+/****************************************************/
+
+.declarationText
+{
+    display: inline-block;
+    float: right;
+    width: 92%;
+}
+
+.declarationInputField
+{
+    display: inline-block;
+    text-align: center;
+    float: left;
+    width: 5%;
+    padding-top: 5px;
+    margin-left: 10px;
+}
+
+.cbTermsTextCss
+{
+    margin: 0 0 0 0;   
+}
+/****************************************************/
+
+/* Styles for Email field*/
+/****************************************************/
+.emailField
+{
+    display: inline;
+    padding: 1px 3px;
+    margin: 2px 0 0 15px;
+    width: 220px;
+}
+
+.collateralConnector{
+    float: left;
+    margin: 0px 1px 0px 3px;
+    line-height: 0.75em;
+}
+.collateralConnector img{
+    vertical-align: bottom;
+}
+.collateralConnectorSecondTier{
+    margin-left:18px;
+}
+.ccEmail{
+    word-wrap: break-word;
+}
+/****************************************************/
+
+/* Styles for mobile specific elements */
+/****************************************************/
+
+.mobile-button {
+    display: inline-block;
+    background-color: #008599; /*#008299*/
+    color: #FFFFFF !important;
+    text-decoration: none;
+    padding-left: 56px;
+    padding-right: 24px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-position: 16px 0.5em;
+    background-repeat: no-repeat;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -khtml-border-radius: 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.mobile-icon-star {
+    background-image: url('../Images/mobile.png');
+}
+
+/****************************************************/
+/* WO119 New icon buttons */
+/****************************************************/
+.icon-button {
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: #006272 !important; /*#008299*/
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    background-position-x: 50%;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    line-height: 1.5em;
+    margin: 0.5em;
+    /*font-weight: bold;*/
+    border: none;
+    cursor: pointer;
+}
+.icon-button:disabled, .icon-button[disabled=disabled]{
+    background-color: #FFFFFF;
+    color: #000000 !important;
+    opacity: 0.6;
+}
+.icon-button-cancel{
+    /*background-image: url('../Images/cancel.png');*/
+}
+.icon-button-download{
+    background-image: url('../Images/download.svg');
+}
+.icon-button-email{
+    background-image: url('../Images/email.svg');
+}
+
+.icon-button-view-screen{
+    background-image: url('../Images/view-screen.svg');
+}
+.icon-button-download, .icon-button-email, .icon-button-view-screen, .icon-button-cancel {
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: left 9px top 1.5px;
+    padding: 5px 10px 5px 40px !important;
+} 
+.icon-button:hover, .icon-button:focus {
+background-color: #E7F7FA;
+} 
+/****************************************************/
+
+/* Styles for account customer */
+/****************************************************/
+
+.account-customer-history .account-customer-history-table
+ {
+    width: 100%;
+}
+
+/* new branding buttons*/
+
+/* font, colour and rounded border, do not change flow*/
+
+/* regular buttons */
+input[type="submit"], input[type="button"] {
+    background-color: white;
+    color: #006272;
+    border: 1px solid #006272;
+    min-width: 50px;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin-left: 0;
+    margin-right: 8px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+/* last regular button should not have the right margin*/
+    input[type="submit"]:last-child, input[type="button"]:last-child{
+        margin-right: 0px;
+    }
+
+input[type="submit"].floatRight, input[type="button"].floatRight {
+    /*TODO: remove commented out debug code when done*/
+    /*background-color: cyan;
+    color: magenta;
+    border: 1px solid black;*/
+    margin-left: 8px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+
+    input[type="submit"]:hover, input[type="button"]:hover {
+        text-decoration: underline;
+    }
+
+    input[type="submit"]:focus, input[type="button"]:focus {
+        text-decoration: underline;
+    }
+
+    input[type="submit"]:disabled, input[type="button"]:disabled {
+        border: 1px solid #dcdcdc;
+        color: #9E9E9E; /*#686E9F;*/
+        background-color: #dcdcdc; /* #cbd0f5; #868ecf;*/
+        text-decoration: none;
+    }
+
+
+.v1-button--action {
+    background-color:#006272 !important;
+    color: white !important;
+}
+
+    .v1-button--action:focus {
+        text-decoration: underline;
+    }
+
+    .v1-button--action:hover {
+        text-decoration: underline;
+    }
+
+    .v1-button--action:disabled {
+        color: #9E9E9E !important;
+        background-color: #dcdcdc !important;
+        text-decoration: none;
+    }
+
+/* "lavender buttons - similar to sidebar login button */
+.purple-button {
+    background-color: #686E9F !important;
+    color: white !important;
+    border-radius: 10px !important;
+    border: 2px solid #686E9F !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    text-align: center;
+}
+
+    .purple-button:disabled {
+        color: #9E9E9E !important;
+        background-color: #dcdcdc !important;
+        border: 2px solid #dcdcdc !important;
+        text-decoration: none;
+    }
+
+/* branding - rounded controls: input */
+input[type="text"], input[type="password"], textarea, select {
+    border-radius: 4px;
+    border-style: solid;
+    border-width: thin;
+    border-color: lightgray;
+}
+
+.formActiveFocusPanel, .formContentPanel, .formFocusPanel, .formPanel {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.greyText {
+    color: #c6c6c6;
+}
+
+.creditCardDetailsPanel {
+    border-radius: 10px;
+    background-color: #F3F7F8;
+    width: 100%;
+}
+
+.progress-link-image {
+    height:70px;
+    width:70px;
+}
+
+div[class="ProgressBar"] {
+    margin-bottom: 30px;
+}
+
+#mainMenu > li[role="menuitem"] {
+    /*border-radius: 10px;*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+div[id$="pagerTop"], div[id$="PagerTop"] {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+div[id$="pagerBottom"], div[id$="PagerBottom"] {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.borderAll {
+    border-radius: 10px;
+}
+
+/*#828*/
+.information-icon-dimensions {
+    position: absolute;
+    top: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+}
+/*#470 - used in GrantorContent  */
+.coloredOrangeBorder {
+    border: 1.5px solid #F9C7A4;
+}
+
+.header-image {
+     height: 45px;
+    width: 45px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 5px !important;
+    align-self: center;
+}
+
+
+.textOnColouredBackground {
+    background-color: #F9C7A4;
+    color: white !important;
+}
+
+.column-left-5 {
+    float: left;
+    width: 5%;
+}
+
+.column-right-any {
+    float: right;
+}
+
+/* #797 */
+
+.coloredGreenBorder {
+    border: 1.5px solid #B7CDC2;
+}
+
+.coloredGreenBoxSmall {
+    height: 85px;
+}
+
+.textOnGreenBackground {
+    background-color: #B7CDC2;
+    color: white !important;
+}
+.coloredGreenBackground {
+    background-color: #B7CDC2;
+  
+}
+
+.textOnColoredBackground { /* # 786 */
+    color: black;
+}
+
+.shortTextOnColoredBackground {
+    padding-top: 15px;
+    color: black;
+
+}
+
+.header-image-for-small-panel {
+    height: 35px;
+    width: 35px;
+    padding-bottom: 20px !important;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 0px;
+    align-self: center;
+    margin-top: 0px !important;
+}
+
+.header-image-verticaly-centered { /* # 786 */
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+    /**********  START OF CRITICAL NOTICE SECTION ****************/
+
+    /*Styles for  critical notices 
+    Background colours
+        Critical Notice (high)	- unused    #e56a54
+        Critical Notice (medium)	        #f6ab01
+        Critical Notice (low) - unused	    #76c5e1
+
+    We don't have alternating row colours - this would get out of synch when some rows are hidden (and is a rare occurence in the real world)
+
+*/
+    .cn-div-table {
+    display: table;
+    width: 100%;
+    /*background-color: #f6ab01;*/
+    background-color: #fed471;  /* 50% lighter */
+    /*border: 1px solid #000000;*/
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+.cn-div-row {
+    display: table-row;
+    border-top: 1px solid #B75443; /* 20% darker than #e56a54 */ /*:TODO: this is not working, but it is not important */
+    /*border: 1px solid #000000;*/
+}
+
+    .cn-div-row:first-child {
+        display: table-row;
+        /*border: 1px solid #000000;*/
+        border-top: none;
+    }
+
+.cn-div-cell-icon {
+    display: table-cell;
+    width: 10%;
+    padding-top: 1.1em;
+    color: #000000;
+    /*color: #006272;*/
+    /*border: 1px solid #000000;*/
+}
+
+.cn-div-cell-notice {
+    display: table-cell;
+    vertical-align: top;
+    /*width: 70%;*/
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    /*border: 1px solid #000000;*/
+}
+
+.cn-div-cell-more {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: center;
+    width: 10%;
+    padding: 3px 10px;
+    /*border: 1px solid #000000;*/
+}
+
+.cn-div-cell-hide {
+    display: table-cell;
+    vertical-align: top;
+    text-align: center;
+    width: 10%;
+    padding: 3px 10px;
+    /*border: 1px solid #000000;*/
+}
+
+/* main body of critical notice 
+ Used with initialiseCriticalNoticeClick to show/hide full length of message - need t update that if the height changes
+*/
+.cn-div-content {
+    padding: 0 0px;
+    max-height: 18px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    /*background-color: #f1f1f1;*/
+}
+
+.cn-hidden {
+    display: none;
+}
+
+/* hide the underline for the close 'button' */
+.cn-div-cell-hide a {
+    text-decoration: none;
+    color: black;
+}
+
+/**********  END OF CRITICAL NOTICE SECTION ****************/
