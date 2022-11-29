@@ -1,0 +1,1156 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="description" content="PPSR"><meta http-equiv="pragma" content="no-cache"><meta http-equiv="cache-control" content="no-cache"><meta name="keywords"><title>
+	PPSR - Home
+</title>
+
+<base href="https://transact.ppsr.gov.au">
+<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+       <link rel="stylesheet" type="text/css" media="all" href="/ppsr/Styles_8_4_0_13/reset.css">
+       <link rel="stylesheet" type="text/css" media="all" href="/ppsr/Styles_8_4_0_13/fa-all.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="/ppsr/Styles_8_4_0_13/structure.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="/ppsr/Styles_8_4_0_13/colour.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="/ppsr/Styles_8_4_0_13/navigation.css">
+        <link rel="stylesheet" type="text/css" media="all" href="/ppsr/Styles_8_4_0_13/typography.css">
+        <link rel="stylesheet" type="text/css" media="all" href="/ppsr/Styles_8_4_0_13/form.css">
+        <link rel="stylesheet" type="text/css" media="all" href="/ppsr/Styles_8_4_0_13/accessibility.css">
+        <link rel="stylesheet" type="text/css" media="all" href="/ppsr/Styles_8_4_0_13/collateral.css">
+        <link rel="stylesheet" type="text/css" media="all" href="/ppsr/Styles_8_4_0_13/search.css">
+        <link rel="stylesheet" type="text/css" media="all" href="/ppsr/Styles_8_4_0_13/securedPartyGroup.css">
+        <link rel="stylesheet" type="text/css" media="all" href="/ppsr/Styles_8_4_0_13/workbench.css">
+        <link rel="stylesheet" type="text/css" media="all" href="/ppsr/Styles_8_4_0_13/payment.css">
+        <link rel="stylesheet" type="text/css" media="print" href="/ppsr/Styles_8_4_0_13/print.css">
+        <link rel="stylesheet" type="text/css" media="all" href="/ppsr/Styles_8_4_0_13/report.css">
+        <link rel="stylesheet" type="text/css" media="all" href="/ppsr/Styles_8_4_0_13/jquery-ui.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="/ppsr/Styles_8_4_0_13/jquery-ui.structure.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="/ppsr/Styles_8_4_0_13/jquery-ui.theme.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="/ppsr/Styles_8_4_0_13/superfish.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="/ppsr/Styles_8_4_0_13/superfish_skinForPpsr.css">
+
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-B13Q1RG5KG&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-42984457-7"></script>
+
+
+    <script type="text/javascript" language="javascript">
+        function SetupWindowForGA() {
+            window.isGoogleAnalyticsEnabled = 'true';
+            window.currentPageId = '_Default';
+            window.currentUserId = '3';
+            window.dataLayer = window.dataLayer || [];
+                    SetupGA('http://transact.ppsr.gov.au/ppsr/Home', 'UA-42984457-7',
+                        'true',
+                    window.currentUserId);
+        }
+ </script>
+
+    <script type="text/javascript" language="javascript">
+        var webSessionTimeout = 20;
+        var webTimeoutCountdownSeconds = 61;
+
+        var environmentName = 'Production';
+        var ppsrClientBrowserWindowNameCookieNameWithEnvironment= 'ppsrClientBrowserWindowName_Production';
+        var ppsrClientBrowserWindowNameCookieName= 'ppsrClientBrowserWindowName';
+        var ppsrSessionIncrementCookieNameWithEnvironment= 'ppsrSessionIncrement_Production';
+        var ppsrSessionIncrementCookieName= 'ppsrSessionIncrement';
+
+        var isAddingSessionIdEnabled = true;
+        var webSessionId = 'c9f3c937-634a-49e7-b4fb-6d2af079449e';
+        //loads session increment parameter to every link on the page
+        function LoadPageLinks()
+        {
+
+
+            ppsrSessionIncrement = GetCookieByNameWithEnvironment(ppsrSessionIncrementCookieName);
+
+            if (document.getElementsByTagName)
+            {
+                var links = document.getElementsByTagName("a");
+                for (var i = 0; i < links.length; i++) {
+                    var link = links[i];
+
+                    var oldHref = link.href;
+                    var skipLink = false;
+
+                    if (link.className == 'tooltipLink') {
+                        //debugger;
+                        skipLink = true;
+
+                    }
+                    if (oldHref.indexOf('#') >= 0 || oldHref.indexOf("javascript:") >= 0 || oldHref.length <= 0) {
+                        skipLink = true;
+                    }
+                    // skip page anchors
+                    if (!skipLink)
+                    {
+                        var separator = "&";
+                        if (oldHref.indexOf('?') === -1) {
+
+                        // no query params
+                            separator = "?";
+                        }
+                        link.href = oldHref + separator + "si=" + ppsrSessionIncrement;
+                        // PPSR-3969 adding web session id to the query string
+                        var currentHref = link.href;
+                        if (isAddingSessionIdEnabled )
+                        {
+                            separator = "&";
+                            link.href = currentHref + separator + "wsi=" + webSessionId;
+                        }
+                    }
+
+                    //#384
+                    if (OnClickGAEventRequired(oldHref)) {
+                            link.addEventListener("click", function(xx){RaiseGAAnchorClickEvent(xx)}.bind(null, oldHref), false);
+                        }
+
+                }
+            }
+            // set window name on session start and then check that it matches the session one
+            var sessionIdHash = 'B1iVP+7SgAy23OsTVC0/a8O25pidA/YKGliLFE7wdtk=';
+
+            // set windowNameCookieInitial for the first page only if they has not been set,
+            var windowNameCookie = GetCookieByNameWithEnvironment(ppsrClientBrowserWindowNameCookieName);
+
+
+            // NOTE:
+            // 1. When we open PPSR application for the very first time, the document.cookie "ppsrClientBrowserWindowName"
+            // is not set. It will be set in this method. ( document.cookie="ppsrClientBrowserWindowName=" + window.name;)
+            // 2. when we open a new tab or a new window, the window.name==''  and for PPSR application
+            // it will be set here when we first open application (window.name = sessionIdHash;) or reset when a new session is started.
+            // A new session is started on every login or log out.
+            // 3. ppsrSessionIncrement is set to "1" when a new session is started (on every login or log out).
+
+            var isWindowNameEmpty = (window.name == null || window.name == '');
+            var isWindowNameCookieEmpty = (windowNameCookie=='' || windowNameCookie==null ) ;
+
+            if( isWindowNameEmpty && isWindowNameCookieEmpty )
+            {
+                // here for the very first ppsr psge
+                 window.name = sessionIdHash;
+                 SetPpsrCookie(window.name, ppsrClientBrowserWindowNameCookieNameWithEnvironment);
+
+            }
+            else
+             {
+
+                if(ppsrSessionIncrement == "1" && !isWindowNameEmpty)
+                {
+
+                     // here every new session and on ppsr page
+                    window.name = sessionIdHash;
+
+                     SetPpsrCookie(window.name, ppsrClientBrowserWindowNameCookieNameWithEnvironment);
+
+                 }
+                 else
+                 {
+
+
+                     // first check the cookie - in the case the window name was restored after the trip to BPoint
+                    //
+                     if (windowNameCookie == "77777restored")
+                     {
+                         SetPpsrCookie(sessionIdHash, ppsrClientBrowserWindowNameCookieNameWithEnvironment);
+                     }
+                     // window name must match session id - otherwise it will mean a new window
+                    if (isWindowNameEmpty)
+                    {
+                         var isClientBrowserWindowNameResetRequested =  'false';
+                         // it appears that trip to BPoint wipes out the window name - just reset it
+                         if (isClientBrowserWindowNameResetRequested == "true")
+                         {
+
+                             window.name = sessionIdHash;
+                             // instruction to the server to reset the isRedirectedFromBPoint flag on the server
+                             SetPpsrCookie("77777restored", ppsrClientBrowserWindowNameCookieNameWithEnvironment);
+                         }
+                         else
+                         {
+
+                             // it must be a new window
+
+
+                             SetPpsrCookie("99999new",ppsrClientBrowserWindowNameCookieNameWithEnvironment);
+                             // set window name to break infinite loop
+
+                             window.name="99999new";
+                             //send straight to the error page
+                             // PPSR-1522 - need to add page URL to be able to clean up navigation history
+                             var refUrl = encodeURIComponent(window.location.href);
+                             needToConfirm = false;
+                             window.open ('/ppsr/Navigation?mw=true&refUrl=' + refUrl,'_self');
+                         }
+                     }
+
+                 }
+
+            }
+        }
+
+        function GetCookieByNameWithEnvironment(cookieName) {
+            var name = cookieName + "_"+ environmentName;
+            var cookies = document.cookie;
+            var splitCookies = cookies.split(";");
+            for (i = 0; i < splitCookies.length; i++) {
+                var cookie = splitCookies[i];
+                if (!(cookie == null || cookie == "")) {
+                    var parts = cookie.split("=");
+                    if (parts != null && parts.length > 1 && trim(parts[0]) == trim(name)) {
+                        return trim(parts[1]);
+                    }
+                }
+            }
+            return null;
+        }
+
+        function RestoreModal()
+        {
+            var isModalRestoreRequired = 'false';
+            if (isModalRestoreRequired == "true")
+            {
+                var modalButtonClientID = '';
+                if (!((modalButtonClientID == null || modalButtonClientID == '')))
+                {
+                    var modalButton = document.getElementById(modalButtonClientID);
+                    if (modalButton != null)
+                    {
+                        modalButton.click();
+                    }
+                }
+            }
+        }
+
+        function ShowHideCriticalNotices() {
+            //debugger;
+            var haveNotices = false;
+            var effectiveCriticalNoticeIds = [];
+            var acknowledgedCriticalNoticeIds = JSON.parse(window.sessionStorage.getItem("acknowledgedCriticalNoticeIds"));
+            if (effectiveCriticalNoticeIds != null && effectiveCriticalNoticeIds.length > 0) {
+                for (var i = 0; i < effectiveCriticalNoticeIds.length; i++) {
+                    var criticalNoticeRowID = "criticalNotice_" + effectiveCriticalNoticeIds[i];
+                    row = document.getElementById(criticalNoticeRowID);
+                    if (row != null) {
+                        if (acknowledgedCriticalNoticeIds == null || acknowledgedCriticalNoticeIds.indexOf(effectiveCriticalNoticeIds[i].toString()) < 0) {
+                            row.style.display = "table-row";
+                            haveNotices = true;
+                        }
+                        else {
+                            row.style.display = "none";
+                        }
+                        //reset the show/hide
+                        document.getElementById(criticalNoticeRowID + "_more").classList.remove("cn-hidden");
+                        document.getElementById(criticalNoticeRowID + "_less").classList.add("cn-hidden");
+
+                    }
+                }
+            }
+            if (haveNotices) {
+                divNotices = document.getElementById("divPpsrCriticalNotices");
+                if (divNotices != null) {
+                    divNotices.style.display = "block";
+                }
+            }
+        }
+    </script>
+
+
+
+
+    <style type="text/css">
+        .smallSearchPanel {
+            padding: 5px;
+            width: 160px;
+            height: 160px !important;
+            margin: auto;
+            cursor:pointer;
+        }
+
+       .smallSearchPanel:hover {
+            border: 3px solid #006272 !important;
+            padding-top:3.5px;
+            padding-bottom:3.5px;
+        }
+
+        .infoPanelLeft, .infoPanelRight {
+            padding: 5px;
+            width: 352px;
+            height: 62px !important;
+            margin-bottom: 30px;
+        }
+
+       .infoPanelLeft {
+            margin-left: 0px;
+            margin-right: 7.5px;
+        }
+        .infoPanelRight {
+            margin-left: 7.5px;
+            margin-right: 0px;
+        }
+
+        .createAccountPanel {
+            width: 340px;
+            height:192px !important;
+
+        }
+
+        .createRegistrationPanel {
+            width: 340px;
+        }
+
+        .stepsPanel {
+            padding: 5px;
+            width: 160px;
+            height: 180px !important;
+            margin-left:-2.1px;
+            margin-right:0px;
+            cursor:pointer;
+        }
+
+       .stepsPanel:hover {
+            border: 3px solid #006272 !important;
+            padding:3.5px;
+        }
+       .stepsPanelDisabled {
+            padding: 5px;
+            width: 160px;
+            height: 180px !important;
+            margin-left:-2.1px;
+            margin-right:0px;
+            cursor:pointer;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+        }
+
+        .column-left {
+            float: left;
+            width: 50%;
+        }
+
+        .column-right {
+            float: right;
+            width: 50%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .h-overview
+        {
+            color: #006272 !important;
+            margin-left:13.8px;
+        }
+    </style>
+
+
+    <script type="text/javascript" language="javascript" src="/ppsr/Scripts_8_4_0_13/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" language="javascript" src="/ppsr/Scripts_8_4_0_13/superfish/hoverIntent.js"></script>
+    <script type="text/javascript" language="javascript" src="/ppsr/Scripts_8_4_0_13/superfish/superfish.js"></script>
+
+    <script type="text/javascript" language="javascript" src="/ppsr/Scripts_8_4_0_13/preventPersistentSessionCookie.js"></script>
+    <script type="text/javascript" language="javascript" src="/ppsr/Scripts_8_4_0_13/ppsr-url-helper.js"></script>
+    <script type="text/javascript" language="javascript" src="/ppsr/Scripts_8_4_0_13/global.js"></script>
+    <script type="text/javascript" language="javascript" src="/ppsr/Scripts_8_4_0_13/sessionTimeout.js"></script>
+    <script type="text/javascript" language="javascript" src="/ppsr/Scripts_8_4_0_13/modal.js"></script>
+    <script type="text/javascript" language="javascript" src="/ppsr/Scripts_8_4_0_13/dirtyFlag.js"></script>
+    <script type="text/javascript" language="javascript" src="/ppsr/Scripts_8_4_0_13/form.js"></script>
+
+    <script type="text/javascript" language="javascript" src="/ppsr/Scripts_8_4_0_13/jquery-ui.min.js"></script>
+
+
+
+    <script type="text/javascript" language="javascript">
+        var cookieName = "ppsrWasResetPasswordClosed_" + environmentName;
+        SetPpsrCookie('true', cookieName);
+
+        $(document).ready(function () {
+                        $(".stepsPanel").click(function() {
+              window.location = $(this).find("a").attr("href");
+              return false;
+             });
+
+       $(".smallSearchPanel").click(function() {
+              window.location = $(this).find("a").attr("href");
+              return false;
+            });
+
+    });
+    </script>
+
+
+    <script type="text/javascript">
+        //Menu items are grouped with an attribute groupindex with a value of 0
+        function getAllLiElementsWithAttribute(parentUlElement, attribute) {
+            var matchingElements = [];
+            var allElements = parentUlElement.getElementsByTagName('li');
+            if (allElements != null) {
+                for (var i = 0, n = allElements.length; i < n; i++) {
+                    if (allElements[i].getAttribute(attribute) !== null && allElements[i].getAttribute(attribute) == 0) {
+                        // Element exists with attribute. Add to array.
+                        matchingElements.push(allElements[i]);
+                    }
+                }
+            }
+            return matchingElements;
+        }
+
+
+        var isDevelopmentMode = "False";
+
+        var validationRedirectSkip = false;
+
+        function skipValidationRedirect() {
+            validationRedirectSkip = true;
+        }
+
+        function acknowledgeCriticalNotice(criticalNoticeId) {
+            //debugger;
+            row = document.getElementById("criticalNotice_" + criticalNoticeId);
+            if (row != null) {
+                row.style.display = "none";
+                var acknowledgedCriticalNoticeIds = JSON.parse(window.sessionStorage.getItem("acknowledgedCriticalNoticeIds"));
+                if (acknowledgedCriticalNoticeIds == null) {
+                    acknowledgedCriticalNoticeIds = [criticalNoticeId];
+                }
+                else {
+                    if (acknowledgedCriticalNoticeIds.indexOf(criticalNoticeId.toString()) < 0) {
+                        acknowledgedCriticalNoticeIds.push(criticalNoticeId);
+                    }
+                }
+                window.sessionStorage.setItem("acknowledgedCriticalNoticeIds", JSON.stringify(acknowledgedCriticalNoticeIds));
+            }
+        }
+
+       function resetAllCriticalNotices() {
+
+            window.sessionStorage.removeItem("acknowledgedCriticalNoticeIds")
+            ShowHideCriticalNotices();
+        }
+
+
+        function initialiseCriticalNoticeClick() {
+            var coll = document.getElementsByClassName("cn-div-row");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].style.maxHeight = "18px";
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = document.getElementById(this.id + "_body");
+                    if (content.style.maxHeight && content.style.maxHeight != "18px") {
+                        content.style.maxHeight = "18px";
+                        document.getElementById(this.id + "_more").classList.toggle("cn-hidden");
+                        document.getElementById(this.id + "_less").classList.toggle("cn-hidden");
+                   } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        document.getElementById(this.id + "_more").classList.toggle("cn-hidden");
+                        document.getElementById(this.id + "_less").classList.toggle("cn-hidden");
+                    }
+                });
+            }
+        }
+
+
+
+
+    </script>
+
+</head>
+<body onload="LoadPageLinks();SetupWindowForGA();SetGaButtonClicks();RestoreModal();LoadPayLock();ShowHideCriticalNotices();initialiseCriticalNoticeClick();" data-new-gr-c-s-check-loaded="14.1087.0" data-gr-ext-installed="">
+   <div id="divPpsrCriticalNotices" style="display:none;"></div>
+   <form name="aspnetForm" method="post" action="./Home" id="aspnetForm" autocomplete="off">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE_PPSR" id="__VIEWSTATE_PPSR" value="1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/ppsr/WebResource.axd?d=A_RKCbEr53x2DYrMYFMiTuKZenOWjeN_DL-IaSQmtpBLkt_Phj4l-GFduPlF2P8YferSZJliZPOd1n-mMtkWNB-pIwg1&amp;t=637815049746327080" type="text/javascript"></script>
+
+
+<script src="/ppsr/Scripts_8_4_0_13/curvycorners.js" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAyvVXD1oYELeveMr0vHCmYPvz3oesckSVg578KCFLQOLVWB/OyYxW4T8mdV4CPFofjm9KcVrt1B6WET6JAJU168YzzD4vvLpSK/BqJ/fxp3gZBMwmo8X/YIZGYk/4+Nk03UfkQFNS2n43qrvJ3Va77Lj2Wf/ZWFASLGcX9GLfpB00MzmiPA+7BJJNPe8sKZUApAzY8qkkMAf3MLjQ1w1ZDAC+ithBVh78HhjmM8Fc25m7bK3E98cRwu5b9U5HN6BowAORaAAO4LYxfIll+SiXYCRcR/ew==">
+</div>
+    <!-- Accessible Prompt -->
+    <div id="wrap">
+        <div id="ctl00_ctl00_m_pnlHeader" class="headerNav">
+
+            <!-- Header Logo -->
+           <div style="float: left; width:100%; padding-right:0px;padding-top:10px;">
+               <div style="width:2%; height:90px; padding-right:10px; float: left;">&nbsp;</div>
+               <div style="width:65%;height:90px; padding-right:10px; float: left;">
+                   <img src="Images/ppsr_logo_01.svg" id="ctl00_ctl00_m_Img1" alt="Australian Financial Security Authority">
+               </div>
+
+           </div>
+            <!-- Site Utilities -->
+            <h2 class="structurelabel">
+                Site utilities</h2>
+            <ul id="utilities">
+                <li><a title="Skip to content" href="#content">Skip to content</a></li>
+                <li>
+                    </li>
+                <li>
+                    <a id="ctl00_ctl00_m_lbAccessible" title="Click here to view the screen reader optimised version of this website" href="javascript:__doPostBack('ctl00$ctl00$m$lbAccessible','')">Screen Reader Optimised View</a></li>
+                <li></li>
+                <li><a class="" href="javascript:openPpsrInformational(14,'https://www.ppsr.gov.au/Redirect?linkid=');" id="ctl00_ctl00_m_lnkContact" name="lnkContact">Contact us<img src="/ppsr/images/quicklink.gif" alt="Open in new window"></a></li>
+                <li><a class="" href="javascript:openPpsrInformational(2001,'https://www.ppsr.gov.au/Redirect?linkid=');" id="ctl00_ctl00_m_lnkHelp" name="lnkHelp">Help<img src="/ppsr/images/quicklink.gif" alt="Open in new window"></a></li>
+            </ul>
+
+</div>
+        <div id="ctl00_ctl00_m_pnlMenu" class="menuNav" style="height:28px;">
+
+            <!--Main navigation -->
+
+             <div id="menu">
+                <h2 class="structurelabel">
+                    Site navigation</h2>
+
+
+
+     <script>
+
+		(function($){ //create closure so we can safely use $ as alias for jQuery
+
+			$(document).ready(function(){
+
+				// initialise plugin
+                var mainMenu = $('#mainMenu').superfish({
+					//add options here if required
+				});
+
+			});
+
+		})(jQuery);
+
+
+    </script>
+
+<div class="bd show-when-document-ready" style="">
+    <ul class="sf-menu parentmenu sf-js-enabled" id="mainMenu" role="menubar" tabindex="0" style="touch-action: pan-y;"><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/Home?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">PPSR Home</a></li><li role="menuitem" aria-haspopup="true"><a href="https://transact.ppsr.gov.au/ppsr/SearchLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" class="sf-with-ul">PPSR Search</a><ul class="childmenu" role="menu" aria-expanded="false" style="display: none;"><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/QuickVINSearch?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Quick motor vehicle search</a></li><li role="menuitem" aria-haspopup="true"><a href="https://transact.ppsr.gov.au/ppsr/SearchBySerialNumber?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" class="sf-with-ul">Search by serial number</a><ul class="childmenu" role="menu" aria-expanded="false" style="display: none;"><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/SearchForMotorVehicle?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Search for motor vehicle</a></li><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/SearchForWatercraft?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Search for watercraft</a></li><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/SearchForAircraft?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Search for aircraft</a></li><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/SearchForIntellectualProperty?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Search for intellectual property</a></li></ul></li><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/SearchByIndividualGrantor?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Search by individual grantor</a></li><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/SearchByOrganisationGrantor?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Search by organisation grantor</a></li><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/SearchByRegistrationNumber?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Search by PPSR registration number</a></li><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/SearchOrdinal?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Ordinal search</a></li><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/SearchResultRetrieve?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Retrieve search result</a></li><li role="menuitem" aria-haspopup="true"><a class="sf-with-ul">Search certificate</a><ul class="childmenu" role="menu" aria-expanded="false" style="display: none;"><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/RequestSearchCertificate?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Request certificate</a></li><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/ReissueSearchCertificate?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Reissue certificate</a></li></ul></li></ul></li><li role="menuitem" aria-haspopup="true"><a href="https://transact.ppsr.gov.au/ppsr/AccountCustomerLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" class="sf-with-ul">Account customers</a><ul class="childmenu" role="menu" aria-expanded="false" style="display: none;"><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/CreateAccountCustomerLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Create account customer</a></li></ul></li><li role="menuitem" aria-haspopup="true"><a href="https://transact.ppsr.gov.au/ppsr/SecuredPartyGroupLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" class="sf-with-ul">Secured party groups</a><ul class="childmenu" role="menu" aria-expanded="false" style="display: none;"><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/CreateSecuredPartyGroupLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Create a secured party group</a></li></ul></li><li role="menuitem" aria-haspopup="true"><a href="https://transact.ppsr.gov.au/ppsr/CollateralRegistrationLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" class="sf-with-ul">Registrations</a><ul class="childmenu" role="menu" aria-expanded="false" style="display: none;"><li role="menuitem" aria-haspopup="true"><a href="https://transact.ppsr.gov.au/ppsr/CreateCollateralLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" class="sf-with-ul">Create a registration</a><ul class="childmenu" role="menu" aria-expanded="false" style="display: none;"></ul></li></ul></li><li role="menuitem" aria-haspopup="true"><a href="https://transact.ppsr.gov.au/ppsr/SubscriptionsLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" class="sf-with-ul">Subscriptions</a><ul class="childmenu" role="menu" aria-expanded="false" style="display: none;"><li role="menuitem" aria-haspopup="true"><a href="https://transact.ppsr.gov.au/ppsr/AlertNotificationLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" class="sf-with-ul">Alert notifications</a><ul class="childmenu" role="menu" aria-expanded="false" style="display: none;"><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/CreateAlertNotification?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Create alert notification request</a></li><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/AmendAlertNotificationLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Amend alert notification request</a></li><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/CancelAlertNotification?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Cancel alert notification request</a></li><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/DisplayAlertNotification?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Display alert notification request</a></li><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/ListAlertNotification?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">List alert notification requests</a></li></ul></li><li role="menuitem" aria-haspopup="true"><a href="https://transact.ppsr.gov.au/ppsr/CriticalNoticeLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" class="sf-with-ul">Critical notice</a><ul class="childmenu" role="menu" aria-expanded="false" style="display: none;"><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/Subscribe?type=criticalnotice&amp;li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Subscribe</a></li><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/Extend?type=criticalnotice&amp;li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Extend subscription</a></li><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/Unsubscribe?type=criticalnotice&amp;li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Unsubscribe</a></li><li role="menuitem"><a href="https://transact.ppsr.gov.au/ppsr/Confirm?type=criticalnotice&amp;li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Confirmations</a></li></ul></li></ul></li></ul>
+</div>
+<br>
+
+
+
+
+
+            </div>
+
+</div>
+        <div id="mainContainer">
+
+            <div id="ctl00_ctl00_m_pnlNoScript">
+
+
+                <script type="text/javascript">
+                    var noScriptCheckNode = document.getElementById('no-script-check');
+                    noScriptCheckNode.parentNode.removeChild(noScriptCheckNode);
+                </script>
+
+</div>
+
+            <div class="show-when-document-ready" style="">
+                <div id="main">
+                    <div id="ctl00_ctl00_m_pnlOptions" class="options">
+
+                        <!--Options at top right of main content pane (such as save and print) -->
+                        <h3 class="structurelabel">
+                            Page utilities</h3>
+
+<ul>
+	<li class="print"><a onclick="window.print(); return false;" id="ctl00_ctl00_m_ucContentOptions_lnkPrint" href="javascript:__doPostBack('ctl00$ctl00$m$ucContentOptions$lnkPrint','')">Print</a></li>
+
+</ul>
+
+
+
+
+</div>
+
+                    <div id="ctl00_ctl00_m_pnlBreadcrumbs">
+
+                        <div id="breadcrumbs">
+
+                            <!--Breadcrumbs-->
+                            <span id="ctl00_ctl00_m_bc"><dl><dt>You are here: </dt><dd class="first">PPSR Home</dd></dl></span>
+                        </div>
+
+</div>
+                    <div id="contentArea">
+                        <br style="height: 5px;">
+                        <!--Transact on behalf banner -->
+
+
+
+                        <!--Marker for skipping to content -->
+                        <a name="content"></a>
+                        <!--Content Panel -->
+                        <div id="ctl00_ctl00_m_pnlContent" class="content">
+
+
+    <h1>PPSR Home</h1>
+    <br>
+
+
+
+    <div id="ctl00_ctl00_m_cpContent_targetedNoticeSummary_pnlSummary">
+
+
+
+
+
+
+
+
+	</div>
+
+    <span id="ctl00_ctl00_m_cpContent_ctSubtitle"><div class="content-text" style="display:inline"><p><span style="color: rgb(52, 121, 139); font-family: Arial, Helvetica, sans-serif; font-size: 16px;">The PPSR is the official Australian Government register of <a href="https://www.ppsr.gov.au/registering/decide-if-you-should-register-ppsr/why-register-ppsr#Whatisasecurityinterest" style="color: #34798b;" target="_blank">security interests</a> in <a href="https://www.ppsr.gov.au/glossary/personal-property?si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" style="color: #34798b;" target="_blank">personal property</a>.</span></p>
+<p><span style="color: #34798b;"><span style="font-size: 16px;"><span style="font-family: Arial, Helvetica, sans-serif;">The PPSR is&nbsp;</span></span><strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">not a register of property ownership.</span></strong></span></p></div></span>
+    <div id="ctl00_ctl00_m_cpContent_pnlInfo">
+        <div id="divInfoLeft" class="column-left">
+            <div id="ctl00_ctl00_m_cpContent_pnlInfoHolderLeft">
+
+
+            <div class="fieldset infoPanelLeft coloredBorder" style="text-align:NotSet;;z-index:0;">
+                                    <span id="ctl00_ctl00_m_cpContent_ctInfoLeft"><div class="content-text" style="display:inline"><p><span style="color: rgb(52, 121, 139); font-family: Arial, Helvetica, sans-serif;">A <strong>$2 search</strong> will show you if the goods you want to buy are likely to be free from debt or other things that could put your money at risk.</span></p></div></span>
+                </div>
+
+	</div>
+        </div>
+        <div id="divInfoRight" class="column-right">
+            <div id="ctl00_ctl00_m_cpContent_pnlInfoHolderRight">
+
+
+            <div class="fieldset infoPanelRight  coloredBorder" style="text-align:NotSet;;z-index:0;">
+                                    <span id="ctl00_ctl00_m_cpContent_ctInfoRight"><div class="content-text" style="display:inline"><p><span style="color: #34798b;"><strong>Registering on the PPSR</strong> is a way to let people know if personal property such as cars, goods or company assets have <a style="color: #34798b;" href="https://www.ppsr.gov.au/registering/decide-if-you-should-register-ppsr/why-register-ppsr#Whatisasecurityinterest" target="_blank">security interests</a>&nbsp;over them.</span></p>
+<p>&nbsp;</p></div></span>
+                </div>
+
+	</div>
+        </div>
+    </div>
+
+
+        <div id="ctl00_ctl00_m_cpContent_pnlSearchHolder">
+
+
+            <div class="fieldset floatLeft coloredBorder" style="text-align:NotSet;;z-index:0;"><h2 class="fieldsetHead coloredText">Search PPSR</h2>
+
+                <div class="row">
+                    <div id="divSearchForMotorVehicle" class="column">
+                        <div id="ctl00_ctl00_m_cpContent_pnlSearchForMotorVehicleHolder">
+
+
+            <div class="fieldset smallSearchPanel coloredBorder" style="text-align:NotSet;;z-index:0;">
+
+        <div style="text-align:center">
+            <div style="vertical-align: top; display: inline-block; text-align: center; width: 90%;">
+                <div class="coloredText">
+                    <a href="https://transact.ppsr.gov.au/ppsr/QuickVINSearch?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" data-is-authorised="1" data-is-nav-blocked="0"></a>
+                    <p style="color:#34798B;font-size:14px;font-weight:bold;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Do a used car search</span></p>
+                </div>
+
+                <h3 class="coloredText" style=" font-size:12px">
+                    <a href="https://transact.ppsr.gov.au/ppsr/QuickVINSearch?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" data-is-authorised="1" data-is-nav-blocked="0" style="text-decoration: none; color:#000000; font-weight:bold;">
+                        <img src="/ppsr/Images/Icons/HomePage/Motor_vehicles.svg" alt="" style="width:90px; height:90px">
+                        <br>
+
+                    </a>
+                </h3>
+            </div>
+        </div>
+
+                            </div>
+
+		</div>
+                    </div>
+                    <div id="divSearchBySerialNumber" class="column">
+                        <div id="ctl00_ctl00_m_cpContent_pnlSearchBySerialNumberHolder">
+
+
+            <div class="fieldset  smallSearchPanel coloredBorder" style="text-align:NotSet;;z-index:0;">
+
+        <div style="text-align:center">
+            <div style="vertical-align: top; display: inline-block; text-align: center; width: 90%;">
+                <div class="coloredText">
+                    <a href="https://transact.ppsr.gov.au/ppsr/SearchBySerialNumber?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" data-is-authorised="1" data-is-nav-blocked="0"></a>
+                    <p style="color:#34798B;font-size:14px;font-weight:bold;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Search by serial number</span></p>
+                </div>
+
+                <h3 class="coloredText" style=" font-size:12px">
+                    <a href="https://transact.ppsr.gov.au/ppsr/SearchBySerialNumber?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" data-is-authorised="1" data-is-nav-blocked="0" style="text-decoration: none; color:#000000; font-weight:bold;">
+                        <img src="/ppsr/Images/Icons/SearchLanding/Serial_number.svg" alt="" style="width:90px; height:90px">
+                        <br>
+
+                    </a>
+                </h3>
+            </div>
+        </div>
+
+                            </div>
+
+		</div>
+                    </div>
+                    <div id="divSearchByOrganisationGrantor" class="column">
+                        <div id="ctl00_ctl00_m_cpContent_pnlSearchByOrganisationGrantorHolder">
+
+
+            <div class="fieldset smallSearchPanel  coloredBorder" style="text-align:NotSet;;z-index:0;">
+
+        <div style="text-align:center">
+            <div style="vertical-align: top; display: inline-block; text-align: center; width: 90%;">
+                <div class="coloredText">
+                    <a href="https://transact.ppsr.gov.au/ppsr/SearchByOrganisationGrantor?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" data-is-authorised="1" data-is-nav-blocked="0"></a>
+                    <p style="color:#34798B;font-size:14px;font-weight:bold;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Search by organisation grantor</span></p>
+                </div>
+
+                <h3 class="coloredText" style=" font-size:12px">
+                    <a href="https://transact.ppsr.gov.au/ppsr/SearchByOrganisationGrantor?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" data-is-authorised="1" data-is-nav-blocked="0" style="text-decoration: none; color:#000000; font-weight:bold;">
+                        <img src="/ppsr/Images/Icons/SearchLanding/Orgnisation_search.svg" alt="" style="width:90px; height:90px">
+                        <br>
+
+                    </a>
+                </h3>
+            </div>
+        </div>
+
+                            </div>
+
+		</div>
+                    </div>
+                </div>
+                <br>
+                <span id="ctl00_ctl00_m_cpContent_ctSearchBottom"><div class="content-text" style="display:inline"><p><span style="color: #34798b;">Use of the PPS Register is subject to the <a style="color: #34798b;" href="https://www.ppsr.gov.au/about-us/technical-information/conditions-and-terms-use/pps-register-general-conditions-use?linkid=400000&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" target="_blank">PPSR register conditions of use</a> and the appropriate <a style="color: #34798b;" href="https://www.ppsr.gov.au/about-us/laws-rules-and-regulations/fees-using-ppsr?linkid=400003&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" target="_blank">fees</a>. Learn <a style="color: #34798b;" href="https://www.ppsr.gov.au/about-us?linkid=400208&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" target="_blank">more about the PPS register</a>.</span></p></div></span>
+                <input type="submit" name="ctl00$ctl00$m$cpContent$btnOtherSearch" value="Other search" onclick="if(!lockSubmit(this, 'False', 'False')){return false;};" id="ctl00_ctl00_m_cpContent_btnOtherSearch" class="floatRight purple-button">
+            </div>
+            <br>
+            <br>
+
+	</div>
+        <div id="ctl00_ctl00_m_cpContent_pnlCreateAccountHolder">
+
+
+            <div class="fieldset floatLeft coloredBorder createAccountPanel" style="width:97%;height:175px;text-align:NotSet;;z-index:0;"><h2 class="fieldsetHead coloredText">Create an account</h2>
+                <div style="float: left;">
+
+        <div style="position:relative; height:140px; margin-bottom:16px;">
+            <div style="float:left; width:110px; height:110px; text-align:center;">
+                <h3 class="coloredText" style="font-size:12px">
+                    <a href="https://transact.ppsr.gov.au/ppsr/CreateAccountCustomerLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" data-is-authorised="1" data-is-nav-blocked="0" style="text-decoration: none; color:#000000; font-weight:bold;">
+                        <img src="/ppsr/Images/Icons/UserManagementLanding/Account_Icon.svg" alt="" style="width:90px; height:90px;">
+                        <br>
+
+                    </a>
+                </h3>
+            </div>
+            <div class="coloredText marginLeft130">
+                <a href="https://transact.ppsr.gov.au/ppsr/CreateAccountCustomerLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" data-is-authorised="1" data-is-nav-blocked="0"></a>
+                <p style="color: #34798b;"><span style="color: rgb(52, 121, 139); font-family: Arial, Helvetica, sans-serif; font-size: 14px;">You will need to <a href="https://transact.ppsr.gov.au/ppsr/CreateAccountCustomerLanding?si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" style="color: #34798b;">create an account</a> to create registrations.</span></p>
+<p style="color: #34798b;"><span style="font-size: 14px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="color: #34798b;">To <a href="https://transact.ppsr.gov.au/ppsr/CreateAccountCustomerLanding?si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" style="color: #34798b;">create an account</a> you will need to:</span></span></span></p>
+<ul>
+    <li><span style="font-size: 14px;"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="color: #34798b;">Provide your or your company's email address and mailing addresses</span></span></span></li>
+    <li><span style="color: rgb(52, 121, 139); font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Nominate the account administrator(s) (responsible for managing the account users) and the account contact person (can be the same as the account administrator)</span></li>
+</ul>
+            </div>
+       </div>
+
+                </div>
+                <input type="submit" name="ctl00$ctl00$m$cpContent$btnCreateAccount" value="Create an account" onclick="if(!lockSubmit(this, 'False', 'False')){return false;};" id="ctl00_ctl00_m_cpContent_btnCreateAccount" class="floatRight purple-button">
+            </div>
+            <br>
+            <br>
+
+	</div>
+
+        <div id="ctl00_ctl00_m_cpContent_pnlCreateRegistrationHolder">
+
+
+            <div class="fieldset floatLeft coloredBorder createRegistrationPanel" style="width:97%;text-align:NotSet;;z-index:0;"><h2 class="fieldsetHead coloredText">Create a PPSR registration</h2>
+                <h4 class="h-overview">Overview of creating registrations on the PPSR</h4>
+                <table class="fieldSet" style="width: 100%;">
+                    <tbody><tr>
+                        <td>
+                            <div id="ctl00_ctl00_m_cpContent_pnlStep1Holder">
+
+
+            <div class="fieldset stepsPanel coloredBorder" style="text-align:NotSet;;z-index:0;">
+
+        <div style="text-align:center">
+            <div style="vertical-align: top; display: inline-block; text-align: center; width: 90%;">
+                <h3 class="coloredText" style="font-size:12px; ">
+                    <a href="https://transact.ppsr.gov.au/ppsr/AccountCustomerLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" data-is-authorised="1" data-is-nav-blocked="0" style="text-decoration: none; color:#000000; font-weight:bold;">
+                        <img src="/ppsr/Images/Icons/CollateralRegistrationLanding/Head_Magnify_Glass_icon.svg" alt="" style="width:90px; height:90px">
+                        <br>
+
+                    </a>
+                </h3>
+                <div class="coloredText">
+                    <a href="https://transact.ppsr.gov.au/ppsr/AccountCustomerLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" data-is-authorised="1" data-is-nav-blocked="0"></a>
+                    <p style="color:#34798B;font-size:14px;font-weight:bold;"><u><span style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Step 1</span></u></p>
+<p style="color:#34798B;font-size:11px;font-weight:bold;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Create an account or log in</span></p>
+                </div>
+            </div>
+        </div>
+
+                                </div>
+
+		</div>
+
+                        </td>
+                        <td>
+                            <div id="ctl00_ctl00_m_cpContent_pnlStep2Holder">
+
+
+            <div class="fieldset stepsPanel coloredBorder" style="text-align:NotSet;;z-index:0;">
+
+        <div style="text-align:center">
+            <div style="vertical-align: top; display: inline-block; text-align: center; width: 90%;">
+                <h3 class="coloredText" style="font-size:12px; ">
+                    <a href="https://transact.ppsr.gov.au/ppsr/SecuredPartyGroupLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" data-is-authorised="1" data-is-nav-blocked="0" style="text-decoration: none; color:#000000; font-weight:bold;">
+                        <img src="/ppsr/Images/Icons/CollateralRegistrationLanding/SPG_Icon.svg" alt="" style="width:90px; height:90px">
+                        <br>
+
+                    </a>
+                </h3>
+                <div class="coloredText">
+                    <a href="https://transact.ppsr.gov.au/ppsr/SecuredPartyGroupLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" data-is-authorised="1" data-is-nav-blocked="0"></a>
+                    <p style="color:#34798B;font-size:14px;font-weight:bold;"><u><span style="font-family: Arial, Helvetica, sans-serif;">Step 2</span></u></p>
+<p style="color:#34798B;font-size:12px;font-weight:bold;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Create a secured party group</span></p>
+                </div>
+            </div>
+        </div>
+
+                                </div>
+
+		</div>
+                        </td>
+                        <td>
+                            <div id="ctl00_ctl00_m_cpContent_pnlStep3Holder">
+
+
+            <div class="fieldset stepsPanel coloredBorder" style="text-align:NotSet;;z-index:0;">
+
+        <div style="text-align:center">
+            <div style="vertical-align: top; display: inline-block; text-align: center; width: 90%;">
+                <h3 class="coloredText" style="font-size:12px; ">
+                    <a href="https://transact.ppsr.gov.au/ppsr/CollateralRegistrationLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" data-is-authorised="1" data-is-nav-blocked="0" style="text-decoration: none; color:#000000; font-weight:bold;">
+                        <img src="/ppsr/Images/Icons/CollateralRegistrationLanding/Create_registration_icon.svg" alt="" style="width:90px; height:90px">
+                        <br>
+
+                    </a>
+                </h3>
+                <div class="coloredText">
+                    <a href="https://transact.ppsr.gov.au/ppsr/CollateralRegistrationLanding?li=False&amp;si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" data-is-authorised="1" data-is-nav-blocked="0"></a>
+                    <p style="color:#34798B;font-size:14px;font-weight:bold;"><u><span style="font-family: Arial, Helvetica, sans-serif;">Step 3</span></u></p>
+<p style="color:#34798B;font-size:12px;font-weight:bold;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Create a registration (fee applies)</span></p>
+                </div>
+            </div>
+        </div>
+
+                                </div>
+
+		</div>
+                        </td>
+                        <td>
+                            <div id="ctl00_ctl00_m_cpContent_pnlStep4Holder">
+
+
+            <div class="fieldset stepsPanel coloredBorder" style="text-align:NotSet;;z-index:0;">
+
+        <div style="text-align:center">
+            <div style="vertical-align: top; display: inline-block; text-align: center; width: 90%;">
+                <h3 class="coloredText" style="font-size:12px; ">
+                    <a href="javascript:var ref = window.open('https://www.ppsr.gov.au/managing-and-maintaining/maintain-your-registrations');" data-is-authorised="1" data-is-nav-blocked="0" style="text-decoration: none; color:#000000; font-weight:bold;">
+                        <img src="/ppsr/Images/Icons/CollateralRegistrationLanding/Finalise_pending_registration.svg" alt="" style="width:90px; height:90px">
+                        <br>
+
+                    </a>
+                </h3>
+                <div class="coloredText">
+                    <a href="javascript:var ref = window.open('https://www.ppsr.gov.au/managing-and-maintaining/maintain-your-registrations');" data-is-authorised="1" data-is-nav-blocked="0"></a>
+                    <p style="color: #34798b; font-size: 14px; font-weight: bold;"><u><a href="https://www.ppsr.gov.au/managing-and-maintaining/maintain-your-registrations?si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e" target="_blank"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: rgb(52, 121, 139);">Step 4</span></a></u></p>
+<p style="color: #34798b; font-size: 12px; font-weight: bold;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Maintain your registrations</span></p>
+                </div>
+            </div>
+        </div>
+
+                                </div>
+
+		</div>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+
+	</div>
+
+
+</div>
+                        <!--ProgressWizard Panel -->
+
+                    </div>
+                </div>
+                <!--Sidebar -->
+                <div id="ctl00_ctl00_m_pnlSidebar" class="sidebar">
+
+                    <!--Login Status -->
+                    <div id="ctl00_ctl00_m_pnlLoginStatus" class="login">
+
+                        <div class="content">
+
+<div id="ctl00_ctl00_m_ucLoginStatus_pnlLoggedOut">
+
+    <h3>Account log in</h3>
+    <input type="submit" name="ctl00$ctl00$m$ucLoginStatus$cmdLogIn" value="Log in" onclick="javascript:Page_BlockSubmit = false; skipValidationRedirect() ;" id="ctl00_ctl00_m_ucLoginStatus_cmdLogIn" class="floatRight" style="margin:15px;">
+    <br>
+    <strong>Don't have an account?</strong>
+    <br>
+    <a id="ctl00_ctl00_m_ucLoginStatus_linkCreateAccount" href="https://transact.ppsr.gov.au/ppsr/CreateAccountCustomerLanding?si=1&amp;wsi=c9f3c937-634a-49e7-b4fb-6d2af079449e">Create an account</a><br>
+    <a class="" href="javascript:openPpsrInformational(60,'https://www.ppsr.gov.au/Redirect?linkid=');" id="ctl00_ctl00_m_ucLoginStatus_lnkAboutAccounts" name="lnkAboutAccounts">About accounts<img src="/ppsr/images/quicklink.gif" alt="Open in new window"></a>
+
+		</div>
+
+
+                        </div>
+
+	</div>
+
+                    <!-- Send copies -->
+
+                    <!--Recent Searches-->
+                    <div id="ctl00_ctl00_m_pnlRecentSearches" class="recentsearches">
+
+                        <div class="content">
+
+
+
+<script language="JavaScript" type="text/javascript">
+
+    function recentSearchesExpanderOnClick() {
+        var imgbtnId = 'ctl00_ctl00_m_ucRecentSearches_imgbtnExpander';
+        var panelExpandoId = 'ctl00_ctl00_m_ucRecentSearches_pnlExpandoSearches';
+        var headerId = 'hRecentSearches';
+        togglePanel(imgbtnId, panelExpandoId, headerId, null, null, 'true');
+
+        var panelExpandoElement = GetElement(panelExpandoId);
+        var isExpanded = panelExpandoElement.style.display != NoneDisplay;
+
+        // update the value of hfIsExpanded to mirror the imgbtnElement state
+        var hfIsExpandedElement = GetElement('ctl00_ctl00_m_ucRecentSearches_hfIsExpanded');
+        hfIsExpandedElement.value = isExpanded ? "true" : "false";
+    }
+
+    function ReceiveRecentSearchesIsExpanded(xml)
+    {
+        var hfIsExpanded2Element = GetElement('ctl00_ctl00_m_ucRecentSearches_hfIsExpanded2');
+        hfIsExpanded2Element.value = xml;
+    }
+
+</script>
+
+
+<span id="ctl00_ctl00_m_ucRecentSearches_rfExpanderState"></span>
+<input type="hidden" name="ctl00$ctl00$m$ucRecentSearches$hfIsExpanded" id="ctl00_ctl00_m_ucRecentSearches_hfIsExpanded" value="false">
+<input type="hidden" name="ctl00$ctl00$m$ucRecentSearches$hfIsExpanded2" id="ctl00_ctl00_m_ucRecentSearches_hfIsExpanded2" onblur="ReceiveRecentSearchesIsExpanded(ResponseXML_ctl00_ctl00_m_ucRecentSearches_rfExpanderState);">
+
+<input type="image" name="ctl00$ctl00$m$ucRecentSearches$imgbtnExpander" id="ctl00_ctl00_m_ucRecentSearches_imgbtnExpander" src="Images/expandForSideBar.svg" alt="Show recent searches" style="height:16px;width:16px;border-width:0px;position:relative;top:3px;">
+<h3 id="hRecentSearches" style="display:inline;">Recent searches</h3>
+<br>
+<div id="ctl00_ctl00_m_ucRecentSearches_pnlExpandoSearches" class="recentsearches" style="display:none;">
+
+
+
+
+		</div>
+
+                        </div>
+
+	</div>
+
+                    <!--Quicklinks-->
+                    <div id="ctl00_ctl00_m_pnlQuickLinks" class="quicklinks">
+
+                        <div class="content">
+
+
+<h3>Quick links</h3>
+<ul>
+    <li><a class="" href="javascript:openPpsrInformational('','https://www.ppsr.gov.au/');" id="ctl00_ctl00_m_ucQuickLinks_lnkPublicWebsite" name="lnkPublicWebsite">PPSR Website<img src="/ppsr/images/quicklink.gif" alt="Open in new window"></a></li>
+    <li><a class="" href="javascript:openPpsrInformational(1001,'https://www.ppsr.gov.au/Redirect?linkid=');" id="ctl00_ctl00_m_ucQuickLinks_lnkTutorial" name="lnkTutorial">Tutorial<img src="/ppsr/images/quicklink.gif" alt="Open in new window"></a></li>
+    <li><a class="" href="javascript:openPpsrInformational(100,'https://www.ppsr.gov.au/Redirect?linkid=');" id="ctl00_ctl00_m_ucQuickLinks_lnkAboutPPSR" name="lnkAboutPPSR">About PPSR<img src="/ppsr/images/quicklink.gif" alt="Open in new window"></a></li>
+    <li><a class="" href="javascript:openPpsrInformational(200,'https://www.ppsr.gov.au/Redirect?linkid=');" id="ctl00_ctl00_m_ucQuickLinks_lnkGlossary" name="lnkGlossary">Glossary<img src="/ppsr/images/quicklink.gif" alt="Open in new window"></a></li>
+</ul>
+
+                        </div>
+
+	</div>
+
+</div>
+            </div>
+        </div>
+        <div class="cleaner">&nbsp;</div>
+    </div>
+    <div id="foot">
+        <div id="ctl00_ctl00_m_pnlFooter" class="footer">
+
+
+            <h2 class="structurelabel">
+                Footer navigation</h2>
+
+<ul>
+
+    <li><a class="" href="javascript:openPpsrInformational(211,'https://www.ppsr.gov.au/Redirect?linkid=');" id="ctl00_ctl00_m_ucPageFooter_lnkDisclaimer" name="lnkDisclaimer">Disclaimer<img src="/ppsr/images/quicklink.gif" alt="Open in new window"></a></li>
+    <li><a class="" href="javascript:openPpsrInformational(213,'https://www.ppsr.gov.au/Redirect?linkid=');" id="ctl00_ctl00_m_ucPageFooter_lnkPrivacyAndSecurity" name="lnkPrivacyAndSecurity">Privacy and security<img src="/ppsr/images/quicklink.gif" alt="Open in new window"></a></li>
+    <li><a class="" href="javascript:openPpsrInformational(215,'https://www.ppsr.gov.au/Redirect?linkid=');" id="ctl00_ctl00_m_ucPageFooter_lnkCopyright" name="lnkCopyright">Copyright<img src="/ppsr/images/quicklink.gif" alt="Open in new window"></a></li>
+    <li><a class="" href="javascript:openPpsrInformational(217,'https://www.ppsr.gov.au/Redirect?linkid=');" id="ctl00_ctl00_m_ucPageFooter_lnkAccessibility" name="lnkAccessibility">Accessibility<img src="/ppsr/images/quicklink.gif" alt="Open in new window"></a></li>
+    <li><a class="" href="javascript:openPpsrInformational(216,'https://www.ppsr.gov.au/Redirect?linkid=');" id="ctl00_ctl00_m_ucPageFooter_lnkContactUs" name="lnkContactUs">Contact us<img src="/ppsr/images/quicklink.gif" alt="Open in new window"></a></li>
+    <li><a class="" href="javascript:openPpsrInformational(214,'https://www.ppsr.gov.au/Redirect?linkid=');" id="ctl00_ctl00_m_ucPageFooter_lnkSiteMap" name="lnkSiteMap">Site map<img src="/ppsr/images/quicklink.gif" alt="Open in new window"></a></li>
+
+</ul>
+
+</div>
+    </div>
+
+    <input type="hidden" name="ctl00$ctl00$m$SessionIncrementHidden" id="ctl00_ctl00_m_SessionIncrementHidden" value="1">
+
+            <input type="hidden" name="ctl00$ctl00$m$hfSessionIdHash" id="ctl00_ctl00_m_hfSessionIdHash" value="B1iVP+7SgAy23OsTVC0/a8O25pidA/YKGliLFE7wdtk=">
+
+            <input type="hidden" name="ctl00$ctl00$m$hfCurrentPageId" id="ctl00_ctl00_m_hfCurrentPageId" value="_Default">
+    <input type="hidden" id="hdnApplicationPath" value="/ppsr">
+    <div id="holder"></div>
+
+<script type="text/javascript">
+//<![CDATA[
+var ByPassLeavingIDs =  new Array("ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToMe_ctl08", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToMe_ctl03", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToMe_ctl09", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToMe_ctl02", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToMe_ctl07", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToMe_ctl18", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToMe_ctl13", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToMe_ctl19", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToMe_ctl12", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToMe_ctl17", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToOthers_ctl08", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToOthers_ctl03", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToOthers_ctl09", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToOthers_ctl02", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToOthers_ctl07", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToOthers_ctl18", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToOthers_ctl13", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToOthers_ctl19", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToOthers_ctl12", "ctl00_ctl00_m_cpContent_ucUserWorkbench_ucPendingApplicationsWorkbench_lvAssignedToOthers_ctl17", "ctl00_ctl00_m_ucContentOptions_lnkPrint");
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+            function UrlDecode_ctl00_ctl00_m_ucRecentSearches_rfExpanderState(encoded) {
+                return encoded;
+            }
+
+            var ResponseXML_ctl00_ctl00_m_ucRecentSearches_rfExpanderState;
+            function validateCallback_ctl00_ctl00_m_ucRecentSearches_rfExpanderState(responseXML, validationType, displayField) {
+               var elementArray = responseXML.getElementsByTagName(validationType);
+               if(elementArray.length != 0) {
+                   var msg = elementArray[0].firstChild.nodeValue;
+                   displayField.value = msg;
+                   if(displayField.value == 'null') {
+                    displayField.value = '';
+                   }
+               } else {
+                   displayField.value = 'connection error';
+               }
+               ResponseXML_ctl00_ctl00_m_ucRecentSearches_rfExpanderState = responseXML;
+               if(typeof displayField.onblur == 'function') {
+                   displayField.onblur();
+               }
+            }
+
+            function ValidationConnection_ctl00_ctl00_m_ucRecentSearches_rfExpanderState(url, callback, validationType, displayField) {
+                var req = init();
+                req.onreadystatechange = processRequest;
+
+                function init() {
+                    if (window.XMLHttpRequest) {
+                        return new XMLHttpRequest();
+                    } else if (window.ActiveXObject) {
+                        return new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+                }
+
+                function processRequest() {
+                    if (req.readyState == 4) {
+                        if (req.status == 200) {
+                            if (callback) callback(req.responseXML, validationType, displayField);
+                        }
+                    }
+                }
+
+                this.doGet = function() {
+                    req.open("GET", url, true);
+                    req.setRequestHeader("ppsr-ajax", "true");
+
+                    req.send(null);
+                }
+            }
+
+           function ValidateField_ctl00_ctl00_m_ucRecentSearches_rfExpanderState(url, validationType, validatorControl, validatedControl) {
+                recentSearchesExpanderOnClick();
+               var validationConnection = new ValidationConnection_ctl00_ctl00_m_ucRecentSearches_rfExpanderState(url + validatedControl.value, validateCallback_ctl00_ctl00_m_ucRecentSearches_rfExpanderState, validationType, validatorControl);
+               validationConnection.doGet();
+           }
+
+            function ValidatorSetup_ctl00_ctl00_m_ucRecentSearches_rfExpanderState(validationTriggerClientId, validatedClientId, validatorClientId, validationType, baseURL) {
+                var validationTriggerControl = document.getElementById(validationTriggerClientId);
+                var validatedControl = document.getElementById(validatedClientId);
+                var validatorControl = document.getElementById(validatorClientId);
+                if(validationTriggerControl != null) {
+                    var currentFunction = validationTriggerControl.onclick;
+                    var currentAction = null;
+                    if(currentFunction != null) {
+                        currentAction = String(currentFunction);
+                    }
+                    var actionHead = "ValidateField_";
+                    var actionTail = "; return false; }";
+                    if(currentAction != null &&  currentAction.indexOf(actionHead) > -1 &&
+                        currentAction.indexOf(actionTail) > -1) {
+                            var newFunction = function() {
+                                ValidateField_ctl00_ctl00_m_ucRecentSearches_rfExpanderState(baseURL, validationType, validatorControl, validatedControl);
+                                return currentFunction.apply(currentFunction);
+                            }
+                            validationTriggerControl.onclick = newFunction;
+                    }
+                    else {
+                        validationTriggerControl.onclick = function() { ValidateField_ctl00_ctl00_m_ucRecentSearches_rfExpanderState(baseURL, validationType, validatorControl, validatedControl); return false; };
+                    }
+                }
+            }
+            ValidatorSetup_ctl00_ctl00_m_ucRecentSearches_rfExpanderState('ctl00_ctl00_m_ucRecentSearches_imgbtnExpander', 'ctl00_ctl00_m_ucRecentSearches_hfIsExpanded', 'ctl00_ctl00_m_ucRecentSearches_hfIsExpanded2', 'ctl00_ctl00_m_ucRecentSearches_rfExpanderState', '/ppsr/Home?rtf=true&validate=true&validationType=ctl00_ctl00_m_ucRecentSearches_rfExpanderState&validationValue=');
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+
+
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
